@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import Head from 'next/head'
-import { Shield, Lock, LogOut, Key, Activity, Cloud, Settings, Search, CheckCircle } from 'lucide-react'
+import { Lock, LogOut, Key, Search } from 'lucide-react'
+import Header from '@/components/Header'
 import UnlockForm from '@/components/UnlockForm'
 import LogoutForm from '@/components/LogoutForm'
 import SearchForm from '@/components/SearchForm'
@@ -215,82 +216,10 @@ export default function Home() {
       </Head>
 
       <div className="min-h-screen bg-gray-900">
-        {/* Header */}
-        <header className="bg-gray-800 border-b border-gray-700">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex items-center justify-between h-20">
-              <div className="flex flex-col gap-1">
-                <div className="flex items-center gap-3">
-                  <Shield className="w-8 h-8 text-blue-500" />
-                  <h1 className="text-xl font-semibold text-gray-100">Auth Admin Dashboard</h1>
-                </div>
-                <div className="flex items-center gap-2 ml-11">
-                  <Activity className="w-3 h-3 text-green-400" />
-                  <span className="text-xs text-gray-400">
-                    {activeTab === 'gigya' ? 'Gigya Account Management' :
-                     activeTab === 'ping' ? 'Ping AIC OIDC Tester' :
-                     activeTab === 'admin' ? 'Ping Admin Panel' :
-                     'Data Integrity Validation'}
-                  </span>
-                </div>
-              </div>
-              <div className="flex gap-2">
-                <button
-                  onClick={() => setActiveTab('gigya')}
-                  className={`px-4 py-2 text-sm font-medium rounded-md transition-colors ${
-                    activeTab === 'gigya'
-                      ? 'bg-blue-600 text-white'
-                      : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
-                  }`}
-                >
-                  <div className="flex items-center gap-2">
-                    <Shield className="w-4 h-4" />
-                    Gigya
-                  </div>
-                </button>
-                <button
-                  onClick={() => setActiveTab('ping')}
-                  className={`px-4 py-2 text-sm font-medium rounded-md transition-colors ${
-                    activeTab === 'ping'
-                      ? 'bg-blue-600 text-white'
-                      : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
-                  }`}
-                >
-                  <div className="flex items-center gap-2">
-                    <Cloud className="w-4 h-4" />
-                    Ping AIC
-                  </div>
-                </button>
-                <button
-                  onClick={() => setActiveTab('admin')}
-                  className={`px-4 py-2 text-sm font-medium rounded-md transition-colors ${
-                    activeTab === 'admin'
-                      ? 'bg-blue-600 text-white'
-                      : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
-                  }`}
-                >
-                  <div className="flex items-center gap-2">
-                    <Settings className="w-4 h-4" />
-                    Ping Admin
-                  </div>
-                </button>
-                <button
-                  onClick={() => setActiveTab('recon')}
-                  className={`px-4 py-2 text-sm font-medium rounded-md transition-colors ${
-                    activeTab === 'recon'
-                      ? 'bg-blue-600 text-white'
-                      : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
-                  }`}
-                >
-                  <div className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4" />
-                    Recon Validation
-                  </div>
-                </button>
-              </div>
-            </div>
-          </div>
-        </header>
+        <Header
+          activeTab={activeTab}
+          onTabChange={setActiveTab}
+        />
 
         {/* Main Content */}
         <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
