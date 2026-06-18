@@ -1,17 +1,16 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Head from 'next/head'
-import { BookOpen, Copy, Check, AlertCircle, Eye, EyeOff } from 'lucide-react'
+import { BookOpen, AlertCircle } from 'lucide-react'
 import Header from '@/components/Header'
 import CopyButton from '@/components/CopyButton'
 import ParameterTable from '@/components/ParameterTable'
 
 type Environment = 'staging' | 'production'
 
-interface ClientScopesResponse {
+interface OidcClientData {
+  id: string
+  redirectionUris: string[]
   scopes: string[]
-  tokenType: string
-  expiresIn: number
-  rawScope: string
 }
 
 interface RunbookData {
@@ -33,15 +32,55 @@ interface RunbookData {
 
 export default function Runbook() {
   const [clientId, setClientId] = useState('')
-  const [clientSecret, setClientSecret] = useState('')
   const [environment, setEnvironment] = useState<Environment>('staging')
   const [loading, setLoading] = useState(false)
   const [runbook, setRunbook] = useState<RunbookData | null>(null)
   const [copiedField, setCopiedField] = useState<string | null>(null)
   const [error, setError] = useState<string | null>(null)
-  const [showSecret, setShowSecret] = useState(false)
   const [usePKCE, setUsePKCE] = useState(false)
-  const [redirectUrisInput, setRedirectUrisInput] = useState('')
+  const [oidcClientsData, setOidcClientsData] = useState<Record<Environment, OidcClientData[]>>({
+    staging: [],
+    production: []
+  })
+  const [clientFound, setClientFound] = useState<boolean>(false)
+
+  // Load OIDC client data on mount
+  useEffect(() => {
+    const loadOidcData = async () => {
+      try {
+        const [stagingRes, prodRes] = await Promise.all([
+          fetch('/oidc-clients/oidc-clients-staging.json'),
+          fetch('/oidc-clients/oidc-clients-prod.json')
+        ])
+
+        const stagingData = stagingRes.ok ? await stagingRes.json() : []
+        const prodData = prodRes.ok ? await prodRes.json() : []
+
+        setOidcClientsData({
+          staging: stagingData,
+          production: prodData
+        })
+      } catch (err) {
+        console.warn('Failed to load OIDC client data:', err)
+      }
+    }
+
+    loadOidcData()
+  }, [])
+
+  // Check if client exists when client ID or environment changes
+  useEffect(() => {
+    if (!clientId.trim()) {
+      setClientFound(false)
+      return
+    }
+
+    const clientData = oidcClientsData[environment].find(
+      (client) => client.id.toLowerCase() === clientId.trim().toLowerCase()
+    )
+
+    setClientFound(!!clientData)
+  }, [clientId, environment, oidcClientsData])
 
   const handleGenerateRunbook = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -67,40 +106,29 @@ export default function Runbook() {
         }
       }
 
-      // Fetch scopes - use client credentials if secret provided, otherwise use OIDC metadata
+      // Check if we have client data from our OIDC clients JSON
+      const clientData = oidcClientsData[environment].find(
+        (client) => client.id.toLowerCase() === clientId.trim().toLowerCase()
+      )
+
+      // Fetch scopes - prioritize: 1) client data, 2) client credentials, 3) OIDC metadata
       let scopesFetched = false
       let scopeSource: 'client_credentials' | 'metadata' = 'metadata'
 
-      if (clientSecret) {
-        // Try client credentials flow first if secret is provided
-        try {
-          const response = await fetch('/api/runbook/token-scopes', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-              clientId,
-              clientSecret,
-              metadataEndpoint: generatedRunbook.endpoints.metadata
-            })
-          })
+      // Use scopes and redirect URIs from our OIDC client data if available
+      if (clientData) {
+        if (clientData.scopes && clientData.scopes.length > 0) {
+          generatedRunbook.scopes = clientData.scopes
+          scopesFetched = true
+          scopeSource = 'client_credentials' // Treat as client-specific scopes
+        }
 
-          if (response.ok) {
-            const scopesData: ClientScopesResponse = await response.json()
-            generatedRunbook.scopes = scopesData.scopes
-            scopesFetched = true
-            scopeSource = 'client_credentials'
-          } else {
-            const errorData = await response.json()
-            console.warn('Token exchange failed:', errorData)
-            setError(`Unable to fetch client-specific scopes: ${errorData.error}. Showing metadata scopes instead.`)
-          }
-        } catch (err) {
-          console.warn('Error fetching scopes via token exchange:', err)
+        if (clientData.redirectionUris && clientData.redirectionUris.length > 0) {
+          generatedRunbook.redirectUris = clientData.redirectionUris
         }
       }
 
-      // Always fetch from OIDC metadata endpoint if we don't have scopes yet
-      // This uses /.well-known/openid-configuration which is publicly accessible
+      // Fallback to OIDC metadata endpoint if we don't have scopes
       if (!scopesFetched) {
         try {
           const response = await fetch('/api/runbook/discovery-scopes', {
@@ -119,11 +147,7 @@ export default function Runbook() {
           } else {
             const errorData = await response.json()
             console.warn('Metadata fetch failed:', errorData)
-            if (clientSecret) {
-              setError('Unable to fetch scopes from both client credentials and metadata endpoint.')
-            } else {
-              setError('Unable to fetch scopes from OIDC metadata endpoint.')
-            }
+            setError('Unable to fetch scopes from OIDC metadata endpoint.')
           }
         } catch (err) {
           console.warn('Error fetching scopes from metadata:', err)
@@ -131,24 +155,7 @@ export default function Runbook() {
       }
 
       // Store the source for display purposes
-      if (scopesFetched) {
-        (generatedRunbook as any).scopeSource = scopeSource
-      }
-
-      // Parse redirect URIs if provided (comma, semicolon, or space/newline separated)
-      if (redirectUrisInput.trim()) {
-        const parsedUris = redirectUrisInput
-          .split(/[\s,;]+/) // Split by any whitespace (space, newline, tab), comma, or semicolon
-          .map(uri => uri.trim())
-          .filter(uri => {
-            // Remove empty strings, whitespace-only strings, and ensure it looks like a URL
-            return uri.length > 0 && /\S/.test(uri) && uri.includes('://')
-          })
-
-        if (parsedUris.length > 0) {
-          generatedRunbook.redirectUris = parsedUris
-        }
-      }
+      (generatedRunbook as any).scopeSource = scopeSource
 
       setRunbook(generatedRunbook)
     } catch (err) {
@@ -201,9 +208,16 @@ export default function Runbook() {
                     value={clientId}
                     onChange={(e) => setClientId(e.target.value)}
                     className="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-md text-gray-100 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
-                    placeholder="Enter client ID"
+                    placeholder="Enter client ID (e.g., CTV-PROD)"
                     required
                   />
+                  {clientId.trim() && (
+                    <p className={`text-xs mt-1 ${clientFound ? 'text-green-400' : 'text-yellow-400'}`}>
+                      {clientFound
+                        ? '✓ Client found - redirect URIs and scopes will be auto-populated'
+                        : '⚠ Client not found in database - will use fallback metadata scopes'}
+                    </p>
+                  )}
                 </div>
 
                 {/* Environment Selection */}
@@ -269,73 +283,6 @@ export default function Runbook() {
                   </p>
                 </div>
 
-                {/* Optional: Fetch Scopes Section */}
-                <div className="border-t border-gray-700 pt-4">
-                  <div className="mb-3">
-                    <label className="block text-sm font-medium text-gray-300 mb-1">
-                      Optional: Fetch Client Scopes
-                    </label>
-                    <p className="text-xs text-gray-400">
-                      Provide the client secret to automatically retrieve granted scopes for this client
-                    </p>
-                  </div>
-
-                  <div>
-                    <label htmlFor="clientSecret" className="block text-xs font-medium text-gray-300 mb-1">
-                      Client Secret
-                    </label>
-                    <div className="relative flex items-center">
-                      <input
-                        type={showSecret ? 'text' : 'password'}
-                        id="clientSecret"
-                        value={clientSecret}
-                        onChange={(e) => setClientSecret(e.target.value)}
-                        className="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md text-gray-100 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent text-sm pr-10"
-                        placeholder="Enter client secret to fetch scopes (optional)"
-                      />
-                      <button
-                        type="button"
-                        onClick={() => setShowSecret(!showSecret)}
-                        className="absolute right-2 text-gray-400 hover:text-gray-200"
-                      >
-                        {showSecret ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
-                      </button>
-                    </div>
-                    <p className="text-xs text-gray-400 mt-1">
-                      We'll use client credentials flow to get the actual scopes granted to this client
-                    </p>
-                  </div>
-                </div>
-
-                {/* Optional: Redirect URIs Section */}
-                <div className="border-t border-gray-700 pt-4">
-                  <div className="mb-3">
-                    <label className="block text-sm font-medium text-gray-300 mb-1">
-                      Optional: Redirect URIs
-                    </label>
-                    <p className="text-xs text-gray-400">
-                      Provide redirect URIs to auto-generate authorization URLs for each one
-                    </p>
-                  </div>
-
-                  <div>
-                    <label htmlFor="redirectUris" className="block text-xs font-medium text-gray-300 mb-1">
-                      Redirect URIs
-                    </label>
-                    <textarea
-                      id="redirectUris"
-                      value={redirectUrisInput}
-                      onChange={(e) => setRedirectUrisInput(e.target.value)}
-                      className="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md text-gray-100 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent text-sm font-mono"
-                      placeholder="https://example.com/callback&#10;https://app.example.com/auth/callback&#10;http://localhost:3000/callback"
-                      rows={3}
-                    />
-                    <p className="text-xs text-gray-400 mt-1">
-                      Separate multiple URIs with commas, semicolons, or newlines
-                    </p>
-                  </div>
-                </div>
-
                 {/* Generate Button */}
                 <button
                   type="submit"
@@ -361,20 +308,24 @@ export default function Runbook() {
                 <div className="mt-6 bg-purple-900/20 rounded-lg border border-purple-800 p-4">
                   <h3 className="text-sm font-medium text-purple-300 mb-2">About Runbook Generation</h3>
                   <p className="text-xs text-purple-200 mb-3">
-                    Generate a comprehensive runbook containing OIDC endpoints, available scopes, and authorization URLs.
+                    Generate a comprehensive runbook containing OIDC endpoints, client-specific scopes, redirect URIs, and authorization URLs.
                   </p>
                   <div className="text-xs text-purple-200 space-y-2">
                     <div>
-                      <strong className="text-purple-300">Without Client Secret:</strong>
-                      <div className="ml-3 mt-1">Shows all server-supported scopes from the OIDC metadata endpoint (<code className="bg-purple-950/50 px-1 rounded">/.well-known/openid-configuration</code>)</div>
+                      <strong className="text-purple-300">Auto-Population:</strong>
+                      <div className="ml-3 mt-1">When you enter a Client ID, we automatically look it up in our OIDC client database (synced hourly from Ping Identity) and populate redirect URIs and scopes if found</div>
                     </div>
                     <div>
-                      <strong className="text-purple-300">With Client Secret:</strong>
-                      <div className="ml-3 mt-1">Shows the actual scopes granted to your specific client via client credentials token exchange</div>
+                      <strong className="text-purple-300">Fallback:</strong>
+                      <div className="ml-3 mt-1">If the client is not found in our database, we'll use server-supported scopes from the OIDC metadata endpoint (<code className="bg-purple-950/50 px-1 rounded">/.well-known/openid-configuration</code>)</div>
                     </div>
                     <div>
-                      <strong className="text-purple-300">With Redirect URIs:</strong>
-                      <div className="ml-3 mt-1">Auto-generates complete authorization URLs for each redirect URI you provide, making it easy to test different callback endpoints</div>
+                      <strong className="text-purple-300">Authorization URLs:</strong>
+                      <div className="ml-3 mt-1">For clients with redirect URIs, we auto-generate complete authorization URLs for each URI, making it easy to test different callback endpoints</div>
+                    </div>
+                    <div>
+                      <strong className="text-purple-300">Data Source:</strong>
+                      <div className="ml-3 mt-1">Client data is automatically synced from Ping Identity staging and production environments every hour</div>
                     </div>
                   </div>
                 </div>
@@ -905,7 +856,11 @@ token={ACCESS_TOKEN_OR_REFRESH_TOKEN}
 
                     {runbook.scopeSource === 'client_credentials' ? (
                       <p className="text-sm text-gray-400 mb-4">
-                        ✓ These are the actual scopes granted to this specific client (retrieved via client credentials token exchange).
+                        ✓ These are the scopes granted to this specific client
+                        {oidcClientsData[environment].find((c) => c.id.toLowerCase() === clientId.trim().toLowerCase())
+                          ? ' (from OIDC client database)'
+                          : ' (retrieved via client credentials token exchange)'}
+                        .
                       </p>
                     ) : (
                       <div className="mb-4 bg-blue-900/20 border border-blue-800 rounded-lg p-3">

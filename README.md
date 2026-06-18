@@ -157,6 +157,52 @@ yarn dev
 # Open http://localhost:3000
 ```
 
+## 📊 OIDC Client Data Sync
+
+This project includes an automated system to fetch and sync OAuth2/OIDC client configurations from Ping Identity environments.
+
+### What's Synced
+
+The system automatically fetches essential OAuth2 client data every hour:
+- **Client ID** - The unique identifier for each OAuth2 client
+- **Redirection URIs** - Allowed callback URLs for the client
+- **Scopes** - OAuth2 scopes granted to the client
+
+### Data Files
+
+- `public/oidc-clients/oidc-clients-staging.json` - Staging environment clients
+- `public/oidc-clients/oidc-clients-prod.json` - Production environment clients
+
+### How It Works
+
+Two GitHub Actions workflows run hourly:
+1. **STAGING**: `.github/workflows/fetch-oidc-staging.yml`
+2. **PROD**: `.github/workflows/fetch-oidc-prod.yml`
+
+Each workflow:
+- Connects to Ping Identity using Frodo CLI
+- Exports all OAuth2 client configurations
+- Extracts only the essential fields (id, redirectionUris, scopes)
+- Compiles all clients into a single JSON file per environment
+- Commits changes back to the repository if data has changed
+
+### Manual Sync
+
+You can trigger a manual sync via GitHub Actions workflow dispatch, or run locally:
+
+```bash
+# Set environment variables
+export ENVIRONMENT=staging  # or prod
+export PING_TENANT_URL=your-tenant-url
+
+# Run the script
+./scripts/fetch-oidc-clients.sh
+```
+
+See `public/oidc-clients/README.md` for more details.
+
+---
+
 ## Tech Stack
 
 - **Next.js 13.5** - React framework with API routes
@@ -164,6 +210,7 @@ yarn dev
 - **Tailwind CSS** - Dark theme UI
 - **localStorage** - Persistent configuration
 - **JWT Decode** - Token inspection
+- **Frodo CLI** - Ping Identity automation (GitHub Actions)
 
 ## Project Structure
 
