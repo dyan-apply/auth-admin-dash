@@ -1,0 +1,2337 @@
+[
+  {
+    "id": "RCSClient",
+    "redirectionUris": [],
+    "scopes": [
+      "fr:idm:*"
+    ]
+  },
+  {
+    "id": "QwVmML2j7-Jjp39fTfIfhBtC",
+    "redirectionUris": [
+      "https://canada.pickem.nfl.com/register-for-game",
+      "https://canada.pickem.nfl.com"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "uid",
+      "api",
+      "nfl_complete",
+      "favorite_team",
+      "nfl_api",
+      "fantasy",
+      "plans"
+    ]
+  },
+  {
+    "id": "CTV-PROD",
+    "redirectionUris": [
+      "https://id.nfl.com/account"
+    ],
+    "scopes": [
+      "openid",
+      "nfl_complete",
+      "email",
+      "address",
+      "phone",
+      "profile"
+    ]
+  },
+  {
+    "id": "be-play-token",
+    "redirectionUris": [],
+    "scopes": [
+      "openid",
+      "email",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "_vo1N8CJYoPH5XYn8CgeoqzQ",
+    "redirectionUris": [
+      "https://superbowlchallenge.es"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "nfl_complete",
+      "favorite_team",
+      "nfl_api",
+      "api"
+    ]
+  },
+  {
+    "id": "AFn8z3tBkNqua5TsbZmQkwCa",
+    "redirectionUris": [
+      "https://nfl-pickem-party.geniusgames.com.au/sso-login",
+      "https://pickparty.nfl.com/sso-login",
+      "https://nfl-knockout.geniusgames.com.au/sso-login",
+      "https://nfl-numbers.geniusgames.com.au/sso-login",
+      "https://numbers.nfl.com/sso-login",
+      "https://knockout.nfl.com/sso-login"
+    ],
+    "scopes": [
+      "openid"
+    ]
+  },
+  {
+    "id": "itSJvtux6wIHgQeWFCRsrvAK",
+    "redirectionUris": [
+      "redirect-nfl-kcc://NFLIDRedirect",
+      "https://id.nfl.com/account"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "fantasy",
+      "plans",
+      "favorite_team",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "1sjuGk1at-CQwO-Fzc4rYJlX",
+    "redirectionUris": [
+      "https://id.nfl.com",
+      "redirect-nfl-cle://NFLIDRedirect"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "uid",
+      "api",
+      "plans",
+      "fantasy",
+      "nfl_api",
+      "nfl_complete",
+      "favorite_team"
+    ]
+  },
+  {
+    "id": "NyFvkmf1pLZi79H5hzF0oyuw",
+    "redirectionUris": [
+      "https://riskit.io/api/login/oidc/nfl-events/gigya/callback",
+      "https://riskit.io/api/login/oidc/nfl-events/gigya/callback"
+    ],
+    "scopes": [
+      "openid"
+    ]
+  },
+  {
+    "id": "cJeQeAjvXVarm7hNG2Kw6J3i",
+    "redirectionUris": [
+      "https://nfltippspiel.sport.de"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "api",
+      "plans",
+      "fantasy",
+      "nfl_api",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "E7K2kzLaYyRL6GEYl34XpXuP",
+    "redirectionUris": [
+      "https://nfl.directv.com",
+      "https://id.nfl.com/rp-user-info",
+      "https://nfl.directv.com/nwc/",
+      "https://id-client.dm.nfl.com/auth-code-exchange-test",
+      "https://id-client.dm.nfl.com/api/code/exchange"
+    ],
+    "scopes": [
+      "openid"
+    ]
+  },
+  {
+    "id": "DWYrKikedq0Vd_XDioWNg4ll",
+    "redirectionUris": [
+      "https://id.nfl.com/oidc/proxy"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "uid",
+      "nfl_complete",
+      "nfl_api",
+      "fantasy"
+    ]
+  },
+  {
+    "id": "hQPP6xmeGYiFJhJIr453axIV",
+    "redirectionUris": [
+      "https://id.nfl.com/account"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "api",
+      "fantasy",
+      "nfl_complete",
+      "favorite_team"
+    ]
+  },
+  {
+    "id": "0zX8NJVryMJ5mr7W_Bm4VDYF",
+    "redirectionUris": [
+      "https://id.nfl.com/oidc/proxy"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "uid",
+      "nfl_complete",
+      "nfl_api",
+      "fantasy"
+    ]
+  },
+  {
+    "id": "T9MzWiXnGLCMqYj0x6tz9u2K",
+    "redirectionUris": [
+      "https://superbowlchallenge.co.uk"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "favorite_team",
+      "nfl_complete",
+      "nfl_api",
+      "api"
+    ]
+  },
+  {
+    "id": "WhWPioB2TLDphf0bSkH4bi7K",
+    "redirectionUris": [
+      "auth://tixngo",
+      "https://digital.49ers.com/api/v1/id/callback",
+      "https://djhwmqyxkldyo.cloudfront.net/api/v1/id/callback",
+      "https://djhwmqyxkldyo.cloudfront.net",
+      "https://digital.49ers.com",
+      "https://d7t37amwcjaz8.cloudfront.net/api/v1/id/callback",
+      "https://d22gsq0e0sdyrz.cloudfront.net/api/v1/id/callback",
+      "https://d26kntmwyt78hh.cloudfront.net/api/v1/id/callback",
+      "https://d3tx85ia8r6hqe.cloudfront.net/api/v1/id/callback",
+      "https://d1p6ohsf9gs1c3.cloudfront.net/api/v1/id/callback",
+      "com.nfl.sf49ers://redirectToFaithful",
+      "http://localhost:8000/api/v1/id/callback"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "uid",
+      "nfl_complete",
+      "nfl_api",
+      "fantasy"
+    ]
+  },
+  {
+    "id": "7MWXW03SOKLnqV90Lt3ga_X2",
+    "redirectionUris": [
+      "https://superbowlchallenge.nfl.com"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "uid",
+      "api",
+      "nfl_complete",
+      "favorite_team",
+      "nfl_api"
+    ]
+  },
+  {
+    "id": "flQF3X_mVJqP1HxAqhaFCl_O",
+    "redirectionUris": [
+      "https://id.nfl.com/oidc/proxy"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "uid",
+      "nfl_complete",
+      "nfl_api",
+      "fantasy"
+    ]
+  },
+  {
+    "id": "BANGO-app",
+    "redirectionUris": [],
+    "scopes": [
+      "openid",
+      "profile",
+      "email",
+      "address",
+      "phone",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "dc1strBDQ5TS7rGykp32T_q8",
+    "redirectionUris": [
+      "alliance-new-sandbox-auth://auth_redirect",
+      "https://car-panthers-fr-auth://auth_redirect"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "fantasy",
+      "plans",
+      "favorite_team",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "5cawPynLbeFvzbjxProWnZ9U",
+    "redirectionUris": [
+      "https://id.nfl.com/oidc/proxy"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "uid",
+      "nfl_complete",
+      "nfl_api",
+      "fantasy"
+    ]
+  },
+  {
+    "id": "tuWNy7qKrDjAUzRTxPqlbw-S",
+    "redirectionUris": [
+      "https://id.nfl.com/account/sign-in",
+      "https://id.nfl.com/loading",
+      "https://id.nfl.com"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "fantasy",
+      "plans",
+      "favorite_team",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "78GTcQ_s8gx-cLAmgz0LkSWY",
+    "redirectionUris": [],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "fantasy",
+      "plans",
+      "favorite_team",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "XpcbXQ8H78MJJ3rwpIKi37T_",
+    "redirectionUris": [
+      "alliance-new-sandbox-auth://auth_redirect",
+      "https://ne-patriots-fr-auth://auth_redirect",
+      "https://id.nfl.com/account"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "fantasy",
+      "plans",
+      "favorite_team",
+      "nfl_complete",
+      "fr:am:*",
+      "fr:idm:*"
+    ]
+  },
+  {
+    "id": "tYaj47E9kaYMXuqI7laeHJoA",
+    "redirectionUris": [
+      "https://id.nfl.com/account",
+      "https://id.nfl.com/oidc/proxy",
+      "nflmobile://id.nfl.com/account"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "fantasy",
+      "plans",
+      "favorite_team",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "gBP2OrLVWjhWxOuMJ3XaJONU",
+    "redirectionUris": [
+      "alliance-new-sandbox-auth://auth_redirect",
+      "htttps://jax-jaguars-fr-auth://auth_redirect"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "fantasy",
+      "plans",
+      "favorite_team",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "wao1DVvZnkRl_8ESKEw687ex",
+    "redirectionUris": [
+      "https://id.nfl.com/account",
+      "redirect-nfl-ari://NFLIDRedirect"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "fantasy",
+      "plans",
+      "favorite_team",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "tteGO2dqo3KQjT8oB0a4vVUo",
+    "redirectionUris": [
+      "https://id.nfl.com/oidc/proxy"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "uid",
+      "nfl_complete",
+      "nfl_api",
+      "fantasy"
+    ]
+  },
+  {
+    "id": "mobileQRLogin",
+    "redirectionUris": [],
+    "scopes": [
+      "openid",
+      "profile",
+      "email",
+      "address",
+      "phone",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "sKCRBx9PlUrWogplCTuPCP0c",
+    "redirectionUris": [
+      "https://id.nfl.com/oidc/proxy"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "uid",
+      "nfl_complete",
+      "nfl_api",
+      "fantasy"
+    ]
+  },
+  {
+    "id": "Sd4ix51dckszbmwy6_lwajOR",
+    "redirectionUris": [
+      "https://id.nfl.com/account/sign-in",
+      "https://id.nfl.com/loading",
+      "https://id.nfl.com"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "fantasy",
+      "plans",
+      "favorite_team",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "zkIAdWErI18kEayrdb2egQBQ",
+    "redirectionUris": [
+      "https://id.nfl.com/account/sign-in",
+      "https://id.nfl.com/loading",
+      "https://id.nfl.com"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "fantasy",
+      "plans",
+      "favorite_team",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "bk6q0OYjzMAQOV4hHfVJi-J6",
+    "redirectionUris": [
+      "https://nfl-bal.sidelinebingo.io/api/login/oidc/nfl-bal/gigya/callback"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "uid",
+      "plans",
+      "fantasy",
+      "nfl_complete",
+      "favorite_team"
+    ]
+  },
+  {
+    "id": "QQGrZiryRodzyfcyi_Cn-O-g",
+    "redirectionUris": [
+      "https://id.nfl.com/oidc/proxy",
+      "https://docker-fantasy.nfl.com:8443",
+      "https://docker-fantasy.nfl.com:8080",
+      "https://fantasy.nfl.com",
+      "https://id.nfl.com/account"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "api",
+      "plans",
+      "fantasy",
+      "nfl_api",
+      "nfl_complete",
+      "favorite_team"
+    ]
+  },
+  {
+    "id": "w1xhun23XETPKmGkV8180GdO",
+    "redirectionUris": [],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "fantasy",
+      "plans",
+      "favorite_team",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "Ot0dHfekoYM21H4ThCLvg83T",
+    "redirectionUris": [
+      "https://id.nfl.com/oidc/proxy"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "uid",
+      "nfl_complete",
+      "nfl_api",
+      "fantasy"
+    ]
+  },
+  {
+    "id": "i6mFAZw4MS5ayLUr-nD5obYy",
+    "redirectionUris": [
+      "https://id.nfl.com/oidc/proxy"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "uid",
+      "nfl_complete",
+      "nfl_api",
+      "fantasy"
+    ]
+  },
+  {
+    "id": "g5hked0Q-AKCocfjmiJUxd9r",
+    "redirectionUris": [
+      "https://id.nfl.com/oidc/proxy"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "uid",
+      "nfl_complete",
+      "nfl_api",
+      "fantasy"
+    ]
+  },
+  {
+    "id": "nflid",
+    "redirectionUris": [
+      "https://id.nfl.com/account",
+      "https://localhost:8443/callback.html",
+      "org.forgerock.demo://oauth2redirect",
+      "http://localhost:8080/account",
+      "https://id.nfl.com/account/sign-up",
+      "https://id.nfl.com/account/activate",
+      "nflmobile://id.nfl.com/account",
+      "https://www.nfl.com/v2",
+      "https://www.nfl.com"
+    ],
+    "scopes": [
+      "openid",
+      "profile",
+      "email",
+      "address",
+      "phone",
+      "nfl_complete",
+      "fantasy"
+    ]
+  },
+  {
+    "id": "g5qnsuL81nBbKtbgukcnABFc",
+    "redirectionUris": [
+      "http://localhost:7504/content/events/us/super-bowl/2025/en/registration/user-details.html",
+      "https://event.nfl.com/super-bowl/2026/registration/user-details",
+      "https://event.nfl.com/uk-1/2025/registration/user-details",
+      "https://event.nfl.com/australia/2025/registration/user-details",
+      "https://event.nfl.com/germany/2025/registration/user-details",
+      "https://event.nfl.com/germany/2025/de/registration/user-details",
+      "https://event.nfl.com/dublin/2025/registration/user-details",
+      "https://event.nfl.com/uk/2025/registration/user-details",
+      "https://event.nfl.com/spain/2025/registration/user-details",
+      "https://event.nfl.com/spain/2025/es/registration/user-details",
+      "https://event.nfl.com/mexico/2025/registration/user-details",
+      "https://event.nfl.com/mexico/2025/es/registration/user-details",
+      "https://event.nfl.com/canada/2025/registration/user-details",
+      "https://event.nfl.com/canada/2025/fr/registration/user-details",
+      "https://event.nfl.com/sao-paulo/2025/pt/registration/user-details",
+      "https://event.nfl.com/sao-paulo/2025/registration/user-details",
+      "https://event.nfl.com/flag-football/2025/registration/user-details",
+      "https://id.nfl.com",
+      "https://event.nfl.com/draft/2025/registration/user-details",
+      "https://event.nfl.com/super-bowl/2025/registration",
+      "https://event.nfl.com/super-bowl/2025/registration/user-details",
+      "https://event.nfl.com/pro-bowl/2025/registration/user-details",
+      "https://event.nfl.com/munich/2024/registration/user-details",
+      "https://event.nfl.com",
+      "https://id.nfl.com/account",
+      "https://event.nfl.com/draft/2026/registration/user-details",
+      "https://event.nfl.com/flag-football/2026/registration/user-details"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "uid",
+      "fantasy",
+      "plans",
+      "favorite_team",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "3y8TJCY-0Y7ZIH63H3Aeq3q4",
+    "redirectionUris": [
+      "https://id.nfl.com/oidc/proxy"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "uid",
+      "nfl_complete",
+      "nfl_api",
+      "fantasy"
+    ]
+  },
+  {
+    "id": "g2ppJ4b7FouXKHxpA5ZRE-sS",
+    "redirectionUris": [
+      "https://nflepsilon.jebbit.com/oauth2/redirect.html",
+      "https://nfl.jebbit.com/oauth2/redirect.html",
+      "https://nfl-cdn.jebbit.io/oauth2/redirect.html"
+    ],
+    "scopes": [
+      "openid"
+    ]
+  },
+  {
+    "id": "ctv_native",
+    "redirectionUris": [
+      "https://staging-id.nfl.com/oidc/proxy",
+      "https://staging-id.nfl.com/account",
+      "https://staging-id.nfl.com/account/activate"
+    ],
+    "scopes": [
+      "openid",
+      "profile",
+      "email",
+      "address",
+      "phone",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "datadog-monitoring",
+    "redirectionUris": [],
+    "scopes": [
+      "openid",
+      "profile",
+      "email",
+      "address",
+      "phone",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "p_H9XzwP1rUVPR0JLQSMA8Zx",
+    "redirectionUris": [
+      "https://id.nfl.com/account"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "fantasy",
+      "plans",
+      "favorite_team",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "YW-3ZR4e1ch0ZhfJXVQP7Dzu",
+    "redirectionUris": [
+      "https://id.nfl.com/account"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "fantasy",
+      "plans",
+      "favorite_team",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "eprG01xWwkWb-wCCcFXA9zZi",
+    "redirectionUris": [
+      "https://id.nfl.com/oidc/proxy",
+      "https://www.nfl.com/plus/?prod_data",
+      "https://stage-www.nfl.com/plus/",
+      "https://stage-www.nfl.com/plus",
+      "https://www.nfl.com/plus/",
+      "https://stage-www.nfl.com/",
+      "https://www.nfl.com/",
+      "https://id.nfl.com/account/",
+      "https://pro.nfl.com/"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "nfl_complete",
+      "favorite_team",
+      "plans",
+      "fantasy",
+      "nfl_api",
+      "api"
+    ]
+  },
+  {
+    "id": "FjB6Q37fPPQqyD_NioGDQ5IU",
+    "redirectionUris": [
+      "https://id.nfl.com/account"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "fantasy",
+      "plans",
+      "favorite_team",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "71fiiFj43U80mtYhhUrgC3TL",
+    "redirectionUris": [
+      "https://id.nfl.com/account",
+      "redirect-nfl-no://NFLIDRedirect"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "fantasy",
+      "plans",
+      "favorite_team",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "gqCzieJpREIkZQWULDe69d1q",
+    "redirectionUris": [
+      "https://id.nfl.com/oidc/proxy"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "uid",
+      "nfl_complete",
+      "nfl_api",
+      "fantasy"
+    ]
+  },
+  {
+    "id": "TIXR",
+    "redirectionUris": [
+      "https://www.tixr.com/sso/nfl/jwt"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "fantasy",
+      "plans",
+      "favorite_team",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "yeVLMOOdnNJYoqHtHOEscLnn",
+    "redirectionUris": [
+      "https://id.nfl.com/oidc/proxy"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "uid",
+      "nfl_complete",
+      "nfl_api",
+      "fantasy"
+    ]
+  },
+  {
+    "id": "WUcsmeGWJ2M9ntQ7aCP_yaSz",
+    "redirectionUris": [
+      "https://id.nfl.com/account",
+      "redirect-nfl-det://NFLIDRedirect"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "fantasy",
+      "plans",
+      "favorite_team",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "IdG1L4VAvxBCx6gblmNRvhZI",
+    "redirectionUris": [
+      "https://google.com",
+      "https://sidelinebingo.io/api/login/oidc/nfl-events/gigya/callback"
+    ],
+    "scopes": [
+      "openid"
+    ]
+  },
+  {
+    "id": "BE-Crawler-Application",
+    "redirectionUris": [],
+    "scopes": [
+      "fr:am:*",
+      "fr:idm:*",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "rUJa5S5aOYbO6LDyvhjcV90G",
+    "redirectionUris": [
+      "https://id.nfl.com/account"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "fantasy",
+      "plans",
+      "favorite_team",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "2dIhB1LXulRcxpHgB-lxiJME",
+    "redirectionUris": [
+      "https://id.nfl.com/account/sign-in",
+      "https://id.nfl.com/loading",
+      "https://id.nfl.com"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "uid",
+      "fantasy",
+      "plans",
+      "favorite_team",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "QcfGYeYTxb6eAdAxwfs2-9Sl",
+    "redirectionUris": [
+      "https://www.nflpickem.app/register-for-game",
+      "https://www.nflpickem.app"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "uid",
+      "nfl_complete",
+      "api",
+      "fantasy",
+      "nfl_api",
+      "favorite_team"
+    ]
+  },
+  {
+    "id": "Dflxeb4NjyJENl_pfWwbZl2D",
+    "redirectionUris": [
+      "alliance-new-sandbox-auth://auth_redirect",
+      "https://ind-colts-fr-auth://auth_redirect"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "fantasy",
+      "plans",
+      "favorite_team",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "tZnFc19L17mJdXTpT0xl4Fva",
+    "redirectionUris": [
+      "https://id.nfl.com/account",
+      "redirect-nfl-min://NFLIDRedirect"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "fantasy",
+      "plans",
+      "favorite_team",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "BE-Webhook-Handler-2",
+    "redirectionUris": [],
+    "scopes": [
+      "openid",
+      "profile",
+      "email",
+      "address",
+      "phone",
+      "nfl_complete",
+      "fr:am:*",
+      "fr:idm:*"
+    ]
+  },
+  {
+    "id": "kD_ughlnWc3qQwcDkaxV29dU",
+    "redirectionUris": [
+      "la-rams-fr-auth://auth_redirect",
+      "alliance-new-sandbox-auth://auth_redirect"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "fantasy",
+      "plans",
+      "favorite_team",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "dXBdMjomjZHh5sBiFu22sPOj",
+    "redirectionUris": [
+      "https://id.nfl.com/account/sign-in",
+      "https://id.nfl.com/loading",
+      "https://id.nfl.com"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "fantasy",
+      "plans",
+      "favorite_team",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "lkIMl2Nb0gjfaW6ecumaFUe5",
+    "redirectionUris": [
+      "https://brazil.pickem.nfl.com/register-for-game",
+      "https://brazil.pickem.nfl.com"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "uid",
+      "api",
+      "nfl_api",
+      "nfl_complete",
+      "favorite_team",
+      "fantasy"
+    ]
+  },
+  {
+    "id": "OuDk3bfDFbA0oyeeexrI0cY7",
+    "redirectionUris": [
+      "https://id.nfl.com",
+      "https://id.nfl.com/loading",
+      "https://id.nfl.com/account/sign-in"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "fantasy",
+      "plans",
+      "favorite_team",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "be-consents-prod",
+    "redirectionUris": [],
+    "scopes": [
+      "fr:am:*",
+      "fr:idm:*"
+    ]
+  },
+  {
+    "id": "5sodAyCn8L2tB9oFai59Osmd",
+    "redirectionUris": [
+      "https://care.dm.nfl.com/api/auth/callback"
+    ],
+    "scopes": [
+      "openid",
+      "profile",
+      "email"
+    ]
+  },
+  {
+    "id": "fzwWQljJwMcwZIPHA6mYJyEv",
+    "redirectionUris": [
+      "https://www.superbowlchallenge.com.au"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "uid",
+      "favorite_team",
+      "nfl_complete",
+      "nfl_api",
+      "api"
+    ]
+  },
+  {
+    "id": "StYdmwaw2PSh1NoE73DQWUw1",
+    "redirectionUris": [
+      "https://id.nfl.com/account/sign-in",
+      "https://id.nfl.com/loading",
+      "https://id.nfl.com"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "fantasy",
+      "plans",
+      "favorite_team",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "3wORdbluPf0sPdSatW_cYl1v",
+    "redirectionUris": [
+      "https://id.nfl.com/account/sign-in",
+      "https://id.nfl.com/loading",
+      "https://id.nfl.com"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "fantasy",
+      "plans",
+      "favorite_team",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "be-webhooks",
+    "redirectionUris": [],
+    "scopes": [
+      "openid",
+      "profile",
+      "email",
+      "address",
+      "phone",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "IdZ9pIiGZyZxv_qRZywrN1bu",
+    "redirectionUris": [
+      "https://id.nfl.com/oidc/proxy"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "uid",
+      "nfl_complete",
+      "nfl_api",
+      "fantasy"
+    ]
+  },
+  {
+    "id": "Gridiron",
+    "redirectionUris": [
+      "https://staging-id.nfl.com/account"
+    ],
+    "scopes": [
+      "fr:am:*",
+      "fr:idm:*",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "iufxAho0h885cwYrLdzsmGJ1",
+    "redirectionUris": [
+      "https://id.nfl.com/account"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "fantasy",
+      "plans",
+      "favorite_team",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "mIlix3XYROBfTk1z83pcqPIRzhYYKHk2",
+    "redirectionUris": [
+      "https://id.nfl.com/account",
+      "https://id.nfl.com/activate",
+      "https://staging-id.nfl.com/account",
+      "https://id.nfl.com/account/activate"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "uid",
+      "nfl_complete",
+      "nfl_api",
+      "fantasy",
+      "plans",
+      "favorite_team"
+    ]
+  },
+  {
+    "id": "m-Q-BlWGEdJf2oXBlDKoSXLh",
+    "redirectionUris": [
+      "https://id.nfl.com/account/sign-in",
+      "https://id.nfl.com/loading",
+      "https://id.nfl.com"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "fantasy",
+      "plans",
+      "favorite_team",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "fOqL24XCIn0zETScUrCFthXd",
+    "redirectionUris": [
+      "alliance-new-sandbox-auth://auth_redirect",
+      "https://hou-texans-fr-auth://auth_redirect"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "fantasy",
+      "plans",
+      "favorite_team",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "81eyPcyD3fgoSVgnTwB6vuM2",
+    "redirectionUris": [
+      "https://id.nfl.com/oidc/proxy"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "uid",
+      "nfl_complete",
+      "nfl_api",
+      "fantasy"
+    ]
+  },
+  {
+    "id": "cGeR6sHJFzMf1k_uyq244DH-",
+    "redirectionUris": [
+      "https://id.nfl.com/oidc/proxy"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "uid",
+      "nfl_complete",
+      "nfl_api",
+      "fantasy"
+    ]
+  },
+  {
+    "id": "mFWrWJZdUoChC22Q-XIGDsXg",
+    "redirectionUris": [
+      "https://id.nfl.com/account",
+      "redirect-nfl-nyj://NFLIDRedirect"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "fantasy",
+      "plans",
+      "favorite_team",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "RCSClient",
+    "redirectionUris": [],
+    "scopes": [
+      "fr:idm:*"
+    ]
+  },
+  {
+    "id": "Za8ncV3yZ4EqZ8l-g-IWtIQG",
+    "redirectionUris": [
+      "https://id.nfl.com/oidc/proxy"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "uid",
+      "nfl_complete",
+      "nfl_api",
+      "fantasy"
+    ]
+  },
+  {
+    "id": "wiBDWLarRt7dL3oBsTjbKmqe",
+    "redirectionUris": [
+      "https://id.nfl.com/oidc/proxy"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "uid",
+      "nfl_complete",
+      "nfl_api",
+      "fantasy"
+    ]
+  },
+  {
+    "id": "Wl9eHa3R0ichHHAf2IBd1mLj",
+    "redirectionUris": [
+      "https://id.nfl.com/oidc/proxy",
+      "https://pro.nfl.com/",
+      "https://id.nfl.com/account"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "api",
+      "plans",
+      "fantasy",
+      "nfl_api",
+      "nfl_complete",
+      "favorite_team"
+    ]
+  },
+  {
+    "id": "Fantasy",
+    "redirectionUris": [
+      "http://localhost:3000/callback"
+    ],
+    "scopes": [
+      "openid",
+      "profile",
+      "email",
+      "address",
+      "phone",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "n9zjTCQtE0KyiIfvZhKnhc3v",
+    "redirectionUris": [
+      "https://id.nfl.com/account",
+      "redirect-nfl-bal://NFLIDRedirect"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "fantasy",
+      "plans",
+      "favorite_team",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "8ki7XBrcE9p4kebbo32gt05J",
+    "redirectionUris": [
+      "https://superbowlchallenge.france.nfl.com"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "uid",
+      "api",
+      "nfl_api",
+      "nfl_complete",
+      "favorite_team"
+    ]
+  },
+  {
+    "id": "3KxmWUFExJh-yXVmypPeB_Qu",
+    "redirectionUris": [
+      "https://id.nfl.com/oidc/proxy",
+      "nflff://id.nfl.com/account",
+      "https://id.nfl.com/account"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "fantasy",
+      "plans",
+      "favorite_team",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "JbFkMbAAB7UuHOEpEg3zN0md",
+    "redirectionUris": [
+      "https://id.nfl.com/oidc/proxy"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "uid",
+      "nfl_complete",
+      "nfl_api",
+      "fantasy"
+    ]
+  },
+  {
+    "id": "gODBu_J1kno00XHTrGS5wcoq",
+    "redirectionUris": [
+      "https://superbowlchallenge.sport.de"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "uid",
+      "favorite_team",
+      "nfl_complete",
+      "nfl_api",
+      "api"
+    ]
+  },
+  {
+    "id": "b_9dojTA6G5kzNw5C5h53sE9",
+    "redirectionUris": [
+      "https://id.nfl.com/account"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "fantasy",
+      "plans",
+      "favorite_team",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "7B_kW9R3S9z6wU5_1BwbOR-Y",
+    "redirectionUris": [
+      "https://id.nfl.com/oidc/proxy"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "uid",
+      "nfl_complete",
+      "nfl_api",
+      "fantasy"
+    ]
+  },
+  {
+    "id": "be-accounts",
+    "redirectionUris": [],
+    "scopes": [
+      "fr:am:*",
+      "fr:idm:*",
+      "nfl_complete",
+      "NFLLegacyTokenExchange"
+    ]
+  },
+  {
+    "id": "3wEs6Xo-VUSTbJjDkaWsNoJ3",
+    "redirectionUris": [
+      "https://id.nfl.com/oidc/proxy"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "uid",
+      "nfl_complete",
+      "nfl_api",
+      "fantasy"
+    ]
+  },
+  {
+    "id": "aSRPQnNGBHzOhviGkAOehrsG",
+    "redirectionUris": [
+      "https://id.nfl.com/account/sign-in",
+      "https://id.nfl.com/loading",
+      "https://id.nfl.com"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "fantasy",
+      "plans",
+      "favorite_team",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "T_JAyaUbrCJkwxy0rVt6_wFs",
+    "redirectionUris": [
+      "https://staging-id.nfl.com/account"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "fantasy",
+      "plans",
+      "favorite_team",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "1Innxmw8syEwJk0FLGNGzOnf",
+    "redirectionUris": [
+      "https://id.nfl.com/oidc/proxy"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "uid",
+      "nfl_complete",
+      "nfl_api",
+      "fantasy"
+    ]
+  },
+  {
+    "id": "sxIw_1lWoj60ogHN3TpznIGg",
+    "redirectionUris": [
+      "https://id.nfl.com/oidc/proxy"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "uid",
+      "nfl_complete",
+      "nfl_api",
+      "fantasy"
+    ]
+  },
+  {
+    "id": "P88aEQXPU4pdxwEBEHVZ16hp",
+    "redirectionUris": [
+      "https://id.nfl.com/oidc/proxy"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "uid",
+      "nfl_complete",
+      "nfl_api",
+      "fantasy"
+    ]
+  },
+  {
+    "id": "E5gqLFOQm2DKxAnPmBEdVf-N",
+    "redirectionUris": [
+      "https://id.nfl.com/account/sign-in",
+      "https://id.nfl.com/loading",
+      "https://id.nfl.com"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "uid",
+      "fantasy",
+      "plans",
+      "favorite_team",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "BSqsH0_sJYldWNziiPiBjQ5D",
+    "redirectionUris": [
+      "https://id.nfl.com/oidc/proxy"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "uid",
+      "nfl_complete",
+      "nfl_api",
+      "fantasy"
+    ]
+  },
+  {
+    "id": "tRzjD0ci5oFcvZ27UHzLpC_E",
+    "redirectionUris": [
+      "https://id.nfl.com/oidc/proxy"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "uid",
+      "nfl_complete",
+      "nfl_api",
+      "fantasy"
+    ]
+  },
+  {
+    "id": "2pHk2aICt6eC6mAjCV4e7T0w",
+    "redirectionUris": [
+      "https://www.pff.com/fantasy/v1/league-sync/oauth-capture"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "fantasy",
+      "plans",
+      "favorite_team"
+    ]
+  },
+  {
+    "id": "x37jTEcfufXIZBo8ee6bjbgM",
+    "redirectionUris": [
+      "https://id.nfl.com/account"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "fantasy",
+      "plans",
+      "favorite_team",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "sZ6WVfi8WRDKb6Lcr2pCDff9",
+    "redirectionUris": [
+      "https://superbowlchallenge.com.br"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "api",
+      "nfl_api",
+      "nfl_complete",
+      "favorite_team"
+    ]
+  },
+  {
+    "id": "eFsVtLdr9mdyJ4MajseYN-ts",
+    "redirectionUris": [
+      "https://www.packersperks.com/",
+      "https://packersperks-staging.idevdesign.net/",
+      "https://packersperks-dev.idevdesign.net/",
+      "https://www.packersperks.com/Sitefinity/Authenticate/signin-nfl",
+      "https://id.nfl.com/account",
+      "https://packersperks-staging.idevdesign.net/Sitefinity/Authenticate/signin-nfl",
+      "https://packersperks-dev.idevdesign.net/Sitefinity/Authenticate/signin-nfl"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "uid",
+      "api",
+      "nfl_api",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "ckNN1s5lALRiW-QSULYjvKQn",
+    "redirectionUris": [
+      "https://id.nfl.com/account"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "fantasy",
+      "plans",
+      "favorite_team",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "nfl_test",
+    "redirectionUris": [
+      "https://id.nfl.com/account",
+      "https://localhost:8443/callback.html",
+      "org.forgerock.demo://oauth2redirect",
+      "http://localhost:8080/account",
+      "https://id.nfl.com/account/sign-up",
+      "https://id.nfl.com/account/activate",
+      "nflmobile://id.nfl.com/account",
+      "https://www.nfl.com/v2",
+      "https://www.nfl.com"
+    ],
+    "scopes": [
+      "openid",
+      "profile",
+      "email",
+      "address",
+      "phone",
+      "nfl_complete",
+      "fantasy"
+    ]
+  },
+  {
+    "id": "GCKkk3ssTLcre3alRQIS9S1n",
+    "redirectionUris": [
+      "https://id.nfl.com/account",
+      "redirect-nfl-gb://NFLIDRedirect",
+      "https://google.com"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "fantasy",
+      "plans",
+      "favorite_team",
+      "nfl_complete",
+      "api"
+    ]
+  },
+  {
+    "id": "p-kB2NdJGROzXwNJDmWFHkyX",
+    "redirectionUris": [
+      "https://superbowlchallenge.canada.nfl.com"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "uid",
+      "favorite_team",
+      "nfl_complete",
+      "nfl_api",
+      "api"
+    ]
+  },
+  {
+    "id": "16FfOe0yKd5ObezyY0btEsXb",
+    "redirectionUris": [
+      "https://id.nfl.com/account",
+      "redirect-nfl-tb://NFLIDRedirect"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "fantasy",
+      "plans",
+      "favorite_team",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "1RKOoagSRLiyiyX2QELAsh7D",
+    "redirectionUris": [
+      "https://onsite.activations.leapevent.tech/auth/third-party/callback",
+      "https://onsite.activations.leapevent.tech",
+      "gsapi://com.nfl.fanmobilepass/oauth2redirect",
+      "https://public.activations.leapevent.tech/auth/third-party/callback",
+      "https://id.nfl.com/account"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "uid",
+      "fantasy",
+      "plans",
+      "favorite_team",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "44AISQvrQ_iKzKoRcwtYduJp",
+    "redirectionUris": [
+      "https://id.nfl.com/oidc/proxy"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "uid",
+      "nfl_complete",
+      "nfl_api",
+      "fantasy"
+    ]
+  },
+  {
+    "id": "OAj3yzcShApHBZcWROf2AsR3",
+    "redirectionUris": [
+      "https://id.nfl.com/oidc/proxy"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "uid",
+      "nfl_complete",
+      "nfl_api",
+      "fantasy"
+    ]
+  },
+  {
+    "id": "tK8icM52G9emY32m1dgAMCjX",
+    "redirectionUris": [
+      "https://id.nfl.com/account",
+      "redirect-nfl-den://NFLIDRedirect"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "fantasy",
+      "plans",
+      "favorite_team",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "1pgPD_cp2yeywPVym_kwmsJN",
+    "redirectionUris": [
+      "https://id.nfl.com/oidc/proxy"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "uid",
+      "nfl_complete",
+      "nfl_api",
+      "fantasy"
+    ]
+  },
+  {
+    "id": "s90TN5h6S5n9N96KTij3ScVL",
+    "redirectionUris": [
+      "https://id.nfl.com/oidc/proxy"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "uid",
+      "nfl_complete",
+      "nfl_api",
+      "fantasy"
+    ]
+  },
+  {
+    "id": "51IATQmUgp0UxpcKCzCWyf7L",
+    "redirectionUris": [
+      "https://huddle.chiefs.com/oauth2/complete",
+      "https://huddle.chiefs.com/nflid/login"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "fantasy",
+      "plans",
+      "favorite_team"
+    ]
+  },
+  {
+    "id": "N93TY9xw9m5VxxkClNQW9NnX",
+    "redirectionUris": [
+      "https://id.nfl.com",
+      "redirect-nfl-was://NFLIDRedirect"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "uid",
+      "nfl_complete",
+      "nfl_api",
+      "fantasy"
+    ]
+  },
+  {
+    "id": "iv8hXrU-3xxibzRHnk8HU-X_",
+    "redirectionUris": [
+      "https://www.youtube.com",
+      "https://youtube.com",
+      "https://google.com",
+      "https://oauth-redirect.googleusercontent.com/r/nfl.com",
+      "https://id-client.dm.nfl.com/api/code/exchange",
+      "https://id-client.dm.nfl.com/auth-code-exchange-test",
+      "https://oauth-redirect-sandbox.googleusercontent.com/r/nfl.com",
+      "https://91a24e94fe7a.ngrok.io/api/code/exchange"
+    ],
+    "scopes": [
+      "openid",
+      "favorite_team",
+      "fantasy"
+    ]
+  },
+  {
+    "id": "PNiMXPmTqq4UjA5xfd3NjgeQ",
+    "redirectionUris": [
+      "https://id.nfl.com/account",
+      "redirect-nfl-sea://NFLIDRedirect"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "fantasy",
+      "plans",
+      "favorite_team",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "LxZ9r31I8W6AYsUizogrrFRr",
+    "redirectionUris": [
+      "https://nfl.fanmaker.com/nfo_oidc/callback?state=chiefsstaff",
+      "https://nfl.fanmaker.com/nfl_oidc/callback?state=kcchiefs",
+      "https://nfl.fanmaker.com/nfl_oidc/callback?state=chiefsstaff",
+      "https://nfl.fanmaker.com/nfo_oidc/callback?state=kcchiefs",
+      "https://id.nfl.com/account"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "nfl_complete",
+      "profile",
+      "fr:am*",
+      "fr:idm*"
+    ]
+  },
+  {
+    "id": "YBiPdLzLBDJvnsBccM72lvj_",
+    "redirectionUris": [
+      "https://id.nfl.com/account/sign-in",
+      "https://id.nfl.com/loading",
+      "https://id.nfl.com"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "fantasy",
+      "plans",
+      "favorite_team",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "xrVrxZFUuFX8T_XZYquXV2i1",
+    "redirectionUris": [
+      "https://id.nfl.com/account/sign-in",
+      "https://id.nfl.com/loading",
+      "https://id.nfl.com"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "fantasy",
+      "plans",
+      "favorite_team",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "3Xcxoak8pWD4F85nWIdfxBA9",
+    "redirectionUris": [
+      "https://id.nfl.com/account/sign-in",
+      "https://id.nfl.com/loading",
+      "https://id.nfl.com"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "fantasy",
+      "plans",
+      "favorite_team",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "WHPmyUcUQgEtQzsoZzrdoQBF",
+    "redirectionUris": [
+      "https://cloud.thefantasyfootballers.com/api/udk/nfl_return",
+      "https://cloud.thefantasyfootballers.com/api/common/nfl_return",
+      "https://www.thefantasyfootballers.com/?nflReturn"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "uid",
+      "fantasy",
+      "plans",
+      "favorite_team",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "qfaOpJCeI6Ftt2emmvNEq3oW",
+    "redirectionUris": [
+      "alliance-new-sandbox-auth://auth_redirect",
+      "https://atl-falcons-fr-auth://auth_redirect",
+      "https://id.nfl.com/account"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "fantasy",
+      "plans",
+      "favorite_team",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "K_NWh1wPWCKKUIKuGjLloKvy",
+    "redirectionUris": [
+      "https://id.nfl.com/oidc/proxy"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "uid",
+      "nfl_complete",
+      "nfl_api",
+      "fantasy"
+    ]
+  },
+  {
+    "id": "jmYPLdi-vZ14rUuwmvWgjVrc",
+    "redirectionUris": [
+      "https://id.nfl.com/account",
+      "redirect-nfl-buf://NFLIDRedirect"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "fantasy",
+      "plans",
+      "favorite_team",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "Yinzcam",
+    "redirectionUris": [
+      "http://localhost:3000/callback"
+    ],
+    "scopes": [
+      "openid",
+      "profile",
+      "email",
+      "address",
+      "phone",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "jnvhtXwxmgnM3wYTbitYICcc",
+    "redirectionUris": [
+      "https://id.nfl.com/oidc/proxy"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "uid",
+      "nfl_complete",
+      "nfl_api",
+      "fantasy"
+    ]
+  },
+  {
+    "id": "DPuV8dWVCZSD06kV5C35ibcH",
+    "redirectionUris": [
+      "https://id.nfl.com/account",
+      "redirect-nfl-oak://NFLIDRedirect"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "fantasy",
+      "plans",
+      "favorite_team",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "RnI8XeXEhWONlVkbVzPIOWwe",
+    "redirectionUris": [
+      "https://id.nfl.com/account",
+      "redirect-nfl-phi://NFLIDRedirect"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "fantasy",
+      "plans",
+      "favorite_team",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "mRmYfozbliY_YjV9QafrA-rS",
+    "redirectionUris": [
+      "https://id.nfl.com/account"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "fantasy",
+      "plans",
+      "favorite_team",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "J7syPnn2Aa96lqtGQAz3zVxo",
+    "redirectionUris": [
+      "https://id.nfl.com/oidc/proxy"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "uid",
+      "nfl_complete",
+      "nfl_api",
+      "fantasy"
+    ]
+  }
+]

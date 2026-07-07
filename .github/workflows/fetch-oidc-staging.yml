@@ -1,0 +1,69 @@
+name: STAGING - Fetch OIDC Clients (Hourly)
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # Run every hour
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  fetch-oidc-staging:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install Frodo CLI
+        run: npm install -g @rockcarver/frodo-cli
+
+      - name: Install jq
+        run: sudo apt-get update && sudo apt-get install -y jq
+
+      - name: Setup Frodo connection
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp
+
+          echo "${{ secrets.STAGING_PING_JWK_FILE }}" | base64 -d > /tmp/service-account.jwk
+          frodo conn save --sa-id "${{ secrets.STAGING_PING_SA_ID }}" --sa-jwk-file /tmp/service-account.jwk "${{ secrets.STAGING_PING_TENANT_URL }}"
+          rm -f /tmp/service-account.jwk
+          echo "✅ Frodo connection configured"
+
+      - name: Make scripts executable
+        run: chmod +x scripts/fetch-oidc-clients.sh
+
+      - name: Fetch OIDC clients
+        env:
+          ENVIRONMENT: staging
+          PING_TENANT_URL: ${{ secrets.STAGING_PING_TENANT_URL }}
+        run: ./scripts/fetch-oidc-clients.sh
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git config user.name "OIDC Sync Bot"
+          git config user.email "oidc-sync@company.com"
+          git add public/oidc-clients/
+          if git diff --staged --quiet; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "No changes detected"
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "Changes detected"
+          fi
+
+      - name: Commit and push
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git commit -m "chore(staging): update OIDC clients $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+          git push origin main
