@@ -1,30 +1,5 @@
 [
   {
-    "id": "_IRlYXCUNSFDnHN_RzvmCqVB",
-    "redirectionUris": [
-      "https://staging-id.nfl.com/account",
-      "https://www.google.com",
-      "https://id-client.dm.nfl.com/auth-code-exchange-test",
-      "https://oauth-redirect-sandbox.googleusercontent.com/r/nfl.com",
-      "https://id-client.dm.nfl.com/api/code/exchange",
-      "https://oauth-redirect-sandbox.googleusercontent.com/r/stage.fantasy.nfl.com",
-      "https://staging.nfl.com:8080/api/code/exchange",
-      "https://dev.nfl.com:8080/api/code/exchange"
-    ],
-    "scopes": [
-      "openid",
-      "profile",
-      "email",
-      "phone",
-      "address",
-      "uid",
-      "favorite_team",
-      "fantasy",
-      "api",
-      "nfl_complete"
-    ]
-  },
-  {
     "id": "0JA5IBbpHI7YNdOzNzRsK3OQ",
     "redirectionUris": [
       "https://staging-id.nfl.com/account",
@@ -102,6 +77,24 @@
     ]
   },
   {
+    "id": "5TwRSAbDfB2E7reJVvDzJMW2",
+    "redirectionUris": [
+      "https://staging-id.nfl.com/account"
+    ],
+    "scopes": [
+      "openid",
+      "profile",
+      "email",
+      "phone",
+      "address",
+      "plans",
+      "fantasy",
+      "nfl_api",
+      "nfl_complete",
+      "favorite_team"
+    ]
+  },
+  {
     "id": "5gUWX8z2wtpuM3KJCW_DnLLG",
     "redirectionUris": [
       "https://staging-id.nfl.com/oidc/proxy",
@@ -122,24 +115,6 @@
   },
   {
     "id": "5o8IY_gNmMNYmcoveX0dFLIu",
-    "redirectionUris": [
-      "https://staging-id.nfl.com/account"
-    ],
-    "scopes": [
-      "openid",
-      "profile",
-      "email",
-      "phone",
-      "address",
-      "plans",
-      "fantasy",
-      "nfl_api",
-      "nfl_complete",
-      "favorite_team"
-    ]
-  },
-  {
-    "id": "5TwRSAbDfB2E7reJVvDzJMW2",
     "redirectionUris": [
       "https://staging-id.nfl.com/account"
     ],
@@ -354,49 +329,12 @@
     "scopes": []
   },
   {
-    "id": "be-account-test",
-    "redirectionUris": [
-      "https://oauth.pstmn.io/v1/callback"
-    ],
-    "scopes": [
-      "NFLLegacyTokenEexchange",
-      "nfl_complete"
-    ]
-  },
-  {
-    "id": "be-accounts",
-    "redirectionUris": [],
-    "scopes": [
-      "fr:am:*",
-      "fr:idm:*",
-      "nfl_complete",
-      "NFLLegacyTokenExchange"
-    ]
-  },
-  {
-    "id": "be-consents",
-    "redirectionUris": [],
-    "scopes": [
-      "fr:am:*",
-      "fr:idm:*"
-    ]
-  },
-  {
     "id": "BE-Crawler-Application",
     "redirectionUris": [],
     "scopes": [
       "fr:am:*",
       "nfl_complete",
       "fr:idm:*"
-    ]
-  },
-  {
-    "id": "be-play-token",
-    "redirectionUris": [],
-    "scopes": [
-      "openid",
-      "nfl-complete",
-      "email"
     ]
   },
   {
@@ -424,69 +362,12 @@
     ]
   },
   {
-    "id": "bEM3UCWKo9UN-6xr-VQj7VFj",
-    "redirectionUris": [
-      "https://onsite.activations.leapstage.tech/auth/third-party/callback",
-      "gsapi://com.nfl.fanmobilepass/oauth2redirect",
-      "https://activations.leapstage.tech",
-      "https://public.activations.leapstage.tech/auth/third-party/callback",
-      "https://staging-id.nfl.com/",
-      "https://staging-id.nfl.com/account"
-    ],
-    "scopes": [
-      "openid",
-      "profile",
-      "email",
-      "phone",
-      "address",
-      "plans",
-      "uid",
-      "fantasy",
-      "nfl_api",
-      "nfl_complete",
-      "favorite_team"
-    ]
-  },
-  {
     "id": "Bogdan-test",
     "redirectionUris": [],
     "scopes": [
       "fr:idm:*",
       "fr:am:*",
       "nfl_complete"
-    ]
-  },
-  {
-    "id": "bV1KjcPshxujTBmbHS_-4JYK",
-    "redirectionUris": [
-      "http://localhost:7506/content/events/us/sao-paulo/2025/en/registration/user-details.html",
-      "https://stage-fanexperience.nfl.com/sao-paulo/2025/registration/user-details",
-      "https://stage-fanexperience.nfl.com/flag-football/2025/registration/user-details",
-      "http://localhost:7506/content/events/us/draft/2025/en/registration/user-details.html",
-      "https://staging-id.nfl.com/account",
-      "https://stage-fanexperience.nfl.com/draft/2025/registration/user-details",
-      "https://staging-id.nfl.com/",
-      "https://staging-id.nfl.com",
-      "https://stage-fanexperience.nfl.com/draft/2025/registration",
-      "https://stage-fanexperience.nfl.com/munich/2024/registration/user-details",
-      "https://stage-fanexperience.nfl.com/uk/london-game/2024/en/registration/user-details",
-      "https://stage-fanexperience.nfl.com/super-bowl/2025/registration/user-details",
-      "https://stage-fanexperience.nfl.com/pro-bowl/2025/registration/user-details",
-      "https://stage-media.nfl.com/content/events/us/draft/2025/en/registration.html",
-      "https://stage-fanexperience.nfl.com/draft/2026/registration/user-details"
-    ],
-    "scopes": [
-      "openid",
-      "profile",
-      "email",
-      "phone",
-      "address",
-      "api",
-      "plans",
-      "fantasy",
-      "nfl_api",
-      "nfl_complete",
-      "favorite_team"
     ]
   },
   {
@@ -505,6 +386,17 @@
       "nfl_api",
       "nfl_complete",
       "favorite_team"
+    ]
+  },
+  {
+    "id": "CTV-PROD",
+    "redirectionUris": [
+      "https://staging-id.nfl.com/account"
+    ],
+    "scopes": [
+      "openid",
+      "nfl_complete",
+      "email"
     ]
   },
   {
@@ -528,72 +420,6 @@
       "openid",
       "profile",
       "email"
-    ]
-  },
-  {
-    "id": "ctv_native",
-    "redirectionUris": [
-      "https://staging-id.nfl.com/oidc/proxy",
-      "https://staging-id.nfl.com/account",
-      "https://staging-id.nfl.com/account/activate"
-    ],
-    "scopes": [
-      "openid",
-      "email",
-      "profile",
-      "address",
-      "phone",
-      "uid",
-      "nfl_complete",
-      "nfl_api",
-      "fantasy"
-    ]
-  },
-  {
-    "id": "CTV-PROD",
-    "redirectionUris": [
-      "https://staging-id.nfl.com/account"
-    ],
-    "scopes": [
-      "openid",
-      "nfl_complete",
-      "email"
-    ]
-  },
-  {
-    "id": "cVWwyr-mPo3N7z05ZnaPwifT",
-    "redirectionUris": [
-      "https://staging-id.nfl.com/account"
-    ],
-    "scopes": [
-      "openid",
-      "profile",
-      "email",
-      "phone",
-      "address",
-      "plans",
-      "fantasy",
-      "nfl_api",
-      "nfl_complete",
-      "favorite_team"
-    ]
-  },
-  {
-    "id": "d5dU8DHWPPtJZ0SsOnhGjFQd",
-    "redirectionUris": [
-      "https://staging-id.nfl.com/account"
-    ],
-    "scopes": [
-      "openid",
-      "profile",
-      "email",
-      "phone",
-      "address",
-      "plans",
-      "fantasy",
-      "nfl_api",
-      "nfl_complete",
-      "favorite_team"
     ]
   },
   {
@@ -628,23 +454,6 @@
       "openid",
       "profile",
       "email"
-    ]
-  },
-  {
-    "id": "ddSnkoluPccQgzJU2JJn8Z1r",
-    "redirectionUris": [
-      "https://staging-id.nfl.com"
-    ],
-    "scopes": [
-      "openid",
-      "profile",
-      "email",
-      "address",
-      "phone",
-      "uid",
-      "nfl_complete",
-      "nfl_api",
-      "fantasy"
     ]
   },
   {
@@ -725,29 +534,6 @@
     ]
   },
   {
-    "id": "hw_qgTkwhwu9T15Y6d2SeIDc",
-    "redirectionUris": [
-      "https://packersperks-staging.idevdesign.net",
-      "https://packersperks-staging.idevdesign.net/",
-      "https://staging-id.nfl.com/account",
-      "https://staging-id.nfl.com/",
-      "https://packersperks-staging.idevdesign.net/Sitefinity/Authenticate/signin-nfl",
-      "https://packersperks-dev.idevdesign.net/",
-      "https://packersperks-dev.idevdesign.net/Sitefinity/Authenticate/signin-nfl"
-    ],
-    "scopes": [
-      "openid",
-      "email",
-      "profile",
-      "phone",
-      "address",
-      "uid",
-      "nfl_complete",
-      "nfl_api",
-      "api"
-    ]
-  },
-  {
     "id": "I9PVg7aV3USubmqxJL",
     "redirectionUris": [
       "https://staging-id.nfl.com/oidc/proxy",
@@ -802,6 +588,411 @@
     ]
   },
   {
+    "id": "IXWM-XTMNpqDp7sV3tas4Ybo",
+    "redirectionUris": [
+      "https://staging-id.nfl.com/account",
+      "nflff://staging-id.nfl.com/account",
+      "https://id.nfl.com/account"
+    ],
+    "scopes": [
+      "openid",
+      "profile",
+      "email",
+      "address",
+      "phone",
+      "fantasy",
+      "nfl_api",
+      "plans",
+      "favorite_team",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "MGPvJ_w0cLTTVAlSewCv27Ob",
+    "redirectionUris": [
+      "https://nfl-bal.staging.sidelinebingo.io/api/login/oidc/nfl-bal/gigya/callback"
+    ],
+    "scopes": [
+      "openid",
+      "profile",
+      "email",
+      "address",
+      "phone",
+      "uid",
+      "plans",
+      "fantasy",
+      "nfl_api",
+      "nfl_complete",
+      "favorite_team"
+    ]
+  },
+  {
+    "id": "NFLLDAPNFIT",
+    "redirectionUris": [],
+    "scopes": [
+      "fr:idm:*"
+    ]
+  },
+  {
+    "id": "NJKiP_J04kbkmsXc92ricaLf",
+    "redirectionUris": [
+      "https://nfl.jebbx.com/oauth2/redirect.html",
+      "https://localhost:3001/oauth2/redirect.html"
+    ],
+    "scopes": [
+      "openid",
+      "plans"
+    ]
+  },
+  {
+    "id": "OwnID-App-Prod",
+    "redirectionUris": [],
+    "scopes": []
+  },
+  {
+    "id": "RCSClient",
+    "redirectionUris": [],
+    "scopes": [
+      "fr:idm:*"
+    ]
+  },
+  {
+    "id": "Ro7OxUyURoCeAICNHSLv-WP5",
+    "redirectionUris": [
+      "https://staging-id.nfl.com/account",
+      "redirect-nfl-det://NFLIDRedirect"
+    ],
+    "scopes": [
+      "openid",
+      "profile",
+      "email",
+      "phone",
+      "address",
+      "plans",
+      "fantasy",
+      "nfl_api",
+      "nfl_complete",
+      "favorite_team"
+    ]
+  },
+  {
+    "id": "S-0lv3tQmFMIuPI5jqUkOJ5A",
+    "redirectionUris": [
+      "https://staging-id.nfl.com/account",
+      "redirect-nfl-bal://NFLIDRedirect"
+    ],
+    "scopes": [
+      "openid",
+      "profile",
+      "email",
+      "phone",
+      "address",
+      "plans",
+      "fantasy",
+      "nfl_api",
+      "nfl_complete",
+      "favorite_team"
+    ]
+  },
+  {
+    "id": "TIXR",
+    "redirectionUris": [
+      "https://staging.tixr.com/sso/nfl/jwt",
+      "https://test.tixr.com/sso/nfl/jwt",
+      "https://develop.tixr.com/sso/nfl/jwt"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "fantasy",
+      "plans",
+      "favorite_team",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "UPQCQL_rUdC8FUoITU4kw2xX",
+    "redirectionUris": [
+      "http://localhost:5003/api/login/oidc/nfl-events/gigya",
+      "https://staging.sidelinebingo.io/api/login/oidc/nfl-events/gigya/callback",
+      "https://sideline.bsnsports.com/"
+    ],
+    "scopes": [
+      "openid",
+      "profile",
+      "email"
+    ]
+  },
+  {
+    "id": "W9XlX7sQ3o_glLEOOnjpgOcv",
+    "redirectionUris": [
+      "https://staging-id.nfl.com/account",
+      "redirect-nfl-gb://NFLIDRedirect"
+    ],
+    "scopes": [
+      "openid",
+      "profile",
+      "email",
+      "phone",
+      "address",
+      "plans",
+      "fantasy",
+      "nfl_api",
+      "nfl_complete",
+      "favorite_team"
+    ]
+  },
+  {
+    "id": "XYVNnU7nd4Bq7mg1cO0gVPCq",
+    "redirectionUris": [
+      "alliance-new-sandbox-auth://auth_redirect",
+      "https://alliance-new-sandbox-auth://auth_redirect",
+      "https://staging-id.nfl.com/loading",
+      "https://staging-id.nfl.com/account/sign-in",
+      "https://staging-id.nfl.com/account"
+    ],
+    "scopes": [
+      "openid",
+      "profile",
+      "email",
+      "phone",
+      "address",
+      "plans",
+      "fantasy",
+      "nfl_api",
+      "nfl_complete",
+      "favorite_team"
+    ]
+  },
+  {
+    "id": "Yinzcam",
+    "redirectionUris": [
+      "http://localhost:3000/callback"
+    ],
+    "scopes": [
+      "fr:am:*",
+      "fr:idm:*",
+      "NFLLegacyTokenExchange"
+    ]
+  },
+  {
+    "id": "_IRlYXCUNSFDnHN_RzvmCqVB",
+    "redirectionUris": [
+      "https://staging-id.nfl.com/account",
+      "https://www.google.com",
+      "https://id-client.dm.nfl.com/auth-code-exchange-test",
+      "https://oauth-redirect-sandbox.googleusercontent.com/r/nfl.com",
+      "https://id-client.dm.nfl.com/api/code/exchange",
+      "https://oauth-redirect-sandbox.googleusercontent.com/r/stage.fantasy.nfl.com",
+      "https://staging.nfl.com:8080/api/code/exchange",
+      "https://dev.nfl.com:8080/api/code/exchange"
+    ],
+    "scopes": [
+      "openid",
+      "profile",
+      "email",
+      "phone",
+      "address",
+      "uid",
+      "favorite_team",
+      "fantasy",
+      "api",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "bEM3UCWKo9UN-6xr-VQj7VFj",
+    "redirectionUris": [
+      "https://onsite.activations.leapstage.tech/auth/third-party/callback",
+      "gsapi://com.nfl.fanmobilepass/oauth2redirect",
+      "https://activations.leapstage.tech",
+      "https://public.activations.leapstage.tech/auth/third-party/callback",
+      "https://staging-id.nfl.com/",
+      "https://staging-id.nfl.com/account"
+    ],
+    "scopes": [
+      "openid",
+      "profile",
+      "email",
+      "phone",
+      "address",
+      "plans",
+      "uid",
+      "fantasy",
+      "nfl_api",
+      "nfl_complete",
+      "favorite_team"
+    ]
+  },
+  {
+    "id": "bV1KjcPshxujTBmbHS_-4JYK",
+    "redirectionUris": [
+      "http://localhost:7506/content/events/us/sao-paulo/2025/en/registration/user-details.html",
+      "https://stage-fanexperience.nfl.com/sao-paulo/2025/registration/user-details",
+      "https://stage-fanexperience.nfl.com/flag-football/2025/registration/user-details",
+      "http://localhost:7506/content/events/us/draft/2025/en/registration/user-details.html",
+      "https://staging-id.nfl.com/account",
+      "https://stage-fanexperience.nfl.com/draft/2025/registration/user-details",
+      "https://staging-id.nfl.com/",
+      "https://staging-id.nfl.com",
+      "https://stage-fanexperience.nfl.com/draft/2025/registration",
+      "https://stage-fanexperience.nfl.com/munich/2024/registration/user-details",
+      "https://stage-fanexperience.nfl.com/uk/london-game/2024/en/registration/user-details",
+      "https://stage-fanexperience.nfl.com/super-bowl/2025/registration/user-details",
+      "https://stage-fanexperience.nfl.com/pro-bowl/2025/registration/user-details",
+      "https://stage-media.nfl.com/content/events/us/draft/2025/en/registration.html",
+      "https://stage-fanexperience.nfl.com/draft/2026/registration/user-details"
+    ],
+    "scopes": [
+      "openid",
+      "profile",
+      "email",
+      "phone",
+      "address",
+      "api",
+      "plans",
+      "fantasy",
+      "nfl_api",
+      "nfl_complete",
+      "favorite_team"
+    ]
+  },
+  {
+    "id": "be-account-test",
+    "redirectionUris": [
+      "https://oauth.pstmn.io/v1/callback"
+    ],
+    "scopes": [
+      "NFLLegacyTokenEexchange",
+      "nfl_complete"
+    ]
+  },
+  {
+    "id": "be-accounts",
+    "redirectionUris": [],
+    "scopes": [
+      "fr:am:*",
+      "fr:idm:*",
+      "nfl_complete",
+      "NFLLegacyTokenExchange"
+    ]
+  },
+  {
+    "id": "be-consents",
+    "redirectionUris": [],
+    "scopes": [
+      "fr:am:*",
+      "fr:idm:*"
+    ]
+  },
+  {
+    "id": "be-play-token",
+    "redirectionUris": [],
+    "scopes": [
+      "openid",
+      "nfl-complete",
+      "email"
+    ]
+  },
+  {
+    "id": "cVWwyr-mPo3N7z05ZnaPwifT",
+    "redirectionUris": [
+      "https://staging-id.nfl.com/account"
+    ],
+    "scopes": [
+      "openid",
+      "profile",
+      "email",
+      "phone",
+      "address",
+      "plans",
+      "fantasy",
+      "nfl_api",
+      "nfl_complete",
+      "favorite_team"
+    ]
+  },
+  {
+    "id": "ctv_native",
+    "redirectionUris": [
+      "https://staging-id.nfl.com/oidc/proxy",
+      "https://staging-id.nfl.com/account",
+      "https://staging-id.nfl.com/account/activate"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "address",
+      "phone",
+      "uid",
+      "nfl_complete",
+      "nfl_api",
+      "fantasy"
+    ]
+  },
+  {
+    "id": "d5dU8DHWPPtJZ0SsOnhGjFQd",
+    "redirectionUris": [
+      "https://staging-id.nfl.com/account"
+    ],
+    "scopes": [
+      "openid",
+      "profile",
+      "email",
+      "phone",
+      "address",
+      "plans",
+      "fantasy",
+      "nfl_api",
+      "nfl_complete",
+      "favorite_team"
+    ]
+  },
+  {
+    "id": "ddSnkoluPccQgzJU2JJn8Z1r",
+    "redirectionUris": [
+      "https://staging-id.nfl.com"
+    ],
+    "scopes": [
+      "openid",
+      "profile",
+      "email",
+      "address",
+      "phone",
+      "uid",
+      "nfl_complete",
+      "nfl_api",
+      "fantasy"
+    ]
+  },
+  {
+    "id": "hw_qgTkwhwu9T15Y6d2SeIDc",
+    "redirectionUris": [
+      "https://packersperks-staging.idevdesign.net",
+      "https://packersperks-staging.idevdesign.net/",
+      "https://staging-id.nfl.com/account",
+      "https://staging-id.nfl.com/",
+      "https://packersperks-staging.idevdesign.net/Sitefinity/Authenticate/signin-nfl",
+      "https://packersperks-dev.idevdesign.net/",
+      "https://packersperks-dev.idevdesign.net/Sitefinity/Authenticate/signin-nfl"
+    ],
+    "scopes": [
+      "openid",
+      "email",
+      "profile",
+      "phone",
+      "address",
+      "uid",
+      "nfl_complete",
+      "nfl_api",
+      "api"
+    ]
+  },
+  {
     "id": "ipwly9JA87cYYT5q7ljnzIRB",
     "redirectionUris": [
       "https://localhost:8001/api/common/nfl_return",
@@ -824,26 +1015,6 @@
     ]
   },
   {
-    "id": "IXWM-XTMNpqDp7sV3tas4Ybo",
-    "redirectionUris": [
-      "https://staging-id.nfl.com/account",
-      "nflff://staging-id.nfl.com/account",
-      "https://id.nfl.com/account"
-    ],
-    "scopes": [
-      "openid",
-      "profile",
-      "email",
-      "address",
-      "phone",
-      "fantasy",
-      "nfl_api",
-      "plans",
-      "favorite_team",
-      "nfl_complete"
-    ]
-  },
-  {
     "id": "j4xPqZ8HDw2g4ciyZ5vGEtjT",
     "redirectionUris": [
       "http://localhost:5003/api/login/oidc/nfl-events/gigya",
@@ -854,24 +1025,6 @@
       "openid",
       "profile",
       "email"
-    ]
-  },
-  {
-    "id": "locTpL51yIQ7VZmiBtVxFQ-i",
-    "redirectionUris": [
-      "https://staging-id.nfl.com/account"
-    ],
-    "scopes": [
-      "openid",
-      "profile",
-      "email",
-      "phone",
-      "address",
-      "plans",
-      "fantasy",
-      "nfl_api",
-      "nfl_complete",
-      "favorite_team"
     ]
   },
   {
@@ -893,17 +1046,16 @@
     ]
   },
   {
-    "id": "MGPvJ_w0cLTTVAlSewCv27Ob",
+    "id": "locTpL51yIQ7VZmiBtVxFQ-i",
     "redirectionUris": [
-      "https://nfl-bal.staging.sidelinebingo.io/api/login/oidc/nfl-bal/gigya/callback"
+      "https://staging-id.nfl.com/account"
     ],
     "scopes": [
       "openid",
       "profile",
       "email",
-      "address",
       "phone",
-      "uid",
+      "address",
       "plans",
       "fantasy",
       "nfl_api",
@@ -978,13 +1130,6 @@
     ]
   },
   {
-    "id": "NFLLDAPNFIT",
-    "redirectionUris": [],
-    "scopes": [
-      "fr:idm:*"
-    ]
-  },
-  {
     "id": "niImSFCGNsrawXgYc07JqcEO",
     "redirectionUris": [
       "https://staging-id.nfl.com/"
@@ -993,17 +1138,6 @@
       "openid",
       "profile",
       "email"
-    ]
-  },
-  {
-    "id": "NJKiP_J04kbkmsXc92ricaLf",
-    "redirectionUris": [
-      "https://nfl.jebbx.com/oauth2/redirect.html",
-      "https://localhost:3001/oauth2/redirect.html"
-    ],
-    "scopes": [
-      "openid",
-      "plans"
     ]
   },
   {
@@ -1052,11 +1186,6 @@
     ]
   },
   {
-    "id": "OwnID-App-Prod",
-    "redirectionUris": [],
-    "scopes": []
-  },
-  {
     "id": "pCd0t1MJ2rklvgrPR8PMA9yt",
     "redirectionUris": [
       "https://staging-id.nfl.com/account",
@@ -1099,13 +1228,6 @@
     "scopes": []
   },
   {
-    "id": "RCSClient",
-    "redirectionUris": [],
-    "scopes": [
-      "fr:idm:*"
-    ]
-  },
-  {
     "id": "rKLQSMF-SgLQt-MqBKDowNZA",
     "redirectionUris": [
       "https://staging-id.nfl.com/oidc/proxy",
@@ -1124,25 +1246,6 @@
       "uid",
       "nfl_api",
       "plans",
-      "favorite_team"
-    ]
-  },
-  {
-    "id": "Ro7OxUyURoCeAICNHSLv-WP5",
-    "redirectionUris": [
-      "https://staging-id.nfl.com/account",
-      "redirect-nfl-det://NFLIDRedirect"
-    ],
-    "scopes": [
-      "openid",
-      "profile",
-      "email",
-      "phone",
-      "address",
-      "plans",
-      "fantasy",
-      "nfl_api",
-      "nfl_complete",
       "favorite_team"
     ]
   },
@@ -1219,25 +1322,6 @@
     ]
   },
   {
-    "id": "S-0lv3tQmFMIuPI5jqUkOJ5A",
-    "redirectionUris": [
-      "https://staging-id.nfl.com/account",
-      "redirect-nfl-bal://NFLIDRedirect"
-    ],
-    "scopes": [
-      "openid",
-      "profile",
-      "email",
-      "phone",
-      "address",
-      "plans",
-      "fantasy",
-      "nfl_api",
-      "nfl_complete",
-      "favorite_team"
-    ]
-  },
-  {
     "id": "s2aHkgeiU6ygGL_22RcUp_Rg",
     "redirectionUris": [
       "https://nfl-pickem-party-stg.geniusgames.com.au/sso-login",
@@ -1251,11 +1335,6 @@
     ]
   },
   {
-    "id": "sajdfkolasdjf",
-    "redirectionUris": [],
-    "scopes": []
-  },
-  {
     "id": "sFISJLMqa6GxKQYX995cEsIV",
     "redirectionUris": [
       "https://nflhe-funct.dtveng.com",
@@ -1266,6 +1345,11 @@
       "openid",
       "plans"
     ]
+  },
+  {
+    "id": "sajdfkolasdjf",
+    "redirectionUris": [],
+    "scopes": []
   },
   {
     "id": "test-oidcclient",
@@ -1283,25 +1367,6 @@
     "id": "test111",
     "redirectionUris": [],
     "scopes": []
-  },
-  {
-    "id": "TIXR",
-    "redirectionUris": [
-      "https://staging.tixr.com/sso/nfl/jwt",
-      "https://test.tixr.com/sso/nfl/jwt",
-      "https://develop.tixr.com/sso/nfl/jwt"
-    ],
-    "scopes": [
-      "openid",
-      "email",
-      "profile",
-      "address",
-      "phone",
-      "fantasy",
-      "plans",
-      "favorite_team",
-      "nfl_complete"
-    ]
   },
   {
     "id": "uoCRDtLbgtXc_aMMY6Du0TtL",
@@ -1323,42 +1388,10 @@
     ]
   },
   {
-    "id": "UPQCQL_rUdC8FUoITU4kw2xX",
-    "redirectionUris": [
-      "http://localhost:5003/api/login/oidc/nfl-events/gigya",
-      "https://staging.sidelinebingo.io/api/login/oidc/nfl-events/gigya/callback",
-      "https://sideline.bsnsports.com/"
-    ],
-    "scopes": [
-      "openid",
-      "profile",
-      "email"
-    ]
-  },
-  {
     "id": "vN4I4yQvjC7jju7R0_-HxCpm",
     "redirectionUris": [
       "https://staging-id.nfl.com/account",
       "redirect-nfl-nyj://NFLIDRedirect"
-    ],
-    "scopes": [
-      "openid",
-      "profile",
-      "email",
-      "phone",
-      "address",
-      "plans",
-      "fantasy",
-      "nfl_api",
-      "nfl_complete",
-      "favorite_team"
-    ]
-  },
-  {
-    "id": "W9XlX7sQ3o_glLEOOnjpgOcv",
-    "redirectionUris": [
-      "https://staging-id.nfl.com/account",
-      "redirect-nfl-gb://NFLIDRedirect"
     ],
     "scopes": [
       "openid",
@@ -1393,28 +1426,6 @@
     ]
   },
   {
-    "id": "XYVNnU7nd4Bq7mg1cO0gVPCq",
-    "redirectionUris": [
-      "alliance-new-sandbox-auth://auth_redirect",
-      "https://alliance-new-sandbox-auth://auth_redirect",
-      "https://staging-id.nfl.com/loading",
-      "https://staging-id.nfl.com/account/sign-in",
-      "https://staging-id.nfl.com/account"
-    ],
-    "scopes": [
-      "openid",
-      "profile",
-      "email",
-      "phone",
-      "address",
-      "plans",
-      "fantasy",
-      "nfl_api",
-      "nfl_complete",
-      "favorite_team"
-    ]
-  },
-  {
     "id": "y3b1WWGh_tMcG0LV-f7VONJa",
     "redirectionUris": [
       "https://staging-id.nfl.com/account",
@@ -1431,17 +1442,6 @@
       "nfl_api",
       "nfl_complete",
       "favorite_team"
-    ]
-  },
-  {
-    "id": "Yinzcam",
-    "redirectionUris": [
-      "http://localhost:3000/callback"
-    ],
-    "scopes": [
-      "fr:am:*",
-      "fr:idm:*",
-      "NFLLegacyTokenExchange"
     ]
   }
 ]
