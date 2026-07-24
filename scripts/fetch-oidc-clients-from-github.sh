@@ -43,10 +43,24 @@ cd "$TEMP_DIR"
 
 if [ -n "$GITHUB_TOKEN" ]; then
     echo "Using GitHub token for authentication"
-    git clone --depth 1 "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git" repo
+    if ! git clone --depth 1 "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git" repo 2>&1; then
+        echo "Error: Failed to clone repository with provided token"
+        echo "Please ensure GITHUB_TOKEN has access to ${GITHUB_REPO}"
+        exit 1
+    fi
 else
-    echo "Cloning public repository (no token provided)"
-    git clone --depth 1 "https://github.com/${GITHUB_REPO}.git" repo
+    echo "⚠️  WARNING: No GITHUB_TOKEN provided, attempting public clone..."
+    if ! git clone --depth 1 "https://github.com/${GITHUB_REPO}.git" repo 2>&1; then
+        echo ""
+        echo "Error: Failed to clone repository. The repository may be private."
+        echo "Please set GITHUB_TOKEN environment variable with a token that has access to ${GITHUB_REPO}"
+        echo ""
+        echo "To generate a token:"
+        echo "1. Go to https://github.com/settings/tokens"
+        echo "2. Create a Personal Access Token with 'repo' scope"
+        echo "3. Set it as PING_CONFIG_GITHUB_TOKEN secret in repository settings"
+        exit 1
+    fi
 fi
 
 # Check if config directory exists
