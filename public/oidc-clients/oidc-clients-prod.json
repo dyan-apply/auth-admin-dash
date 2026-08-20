@@ -565,6 +565,19 @@
     ]
   },
   {
+    "id": "ES-Pickem",
+    "redirectionUris": [
+      "http://mispicks.nfl.com"
+    ],
+    "scopes": [
+      "openid",
+      "profile",
+      "email",
+      "fr:am:*",
+      "fr:idm:*"
+    ]
+  },
+  {
     "id": "Fantasy",
     "redirectionUris": [
       "http://localhost:3000/callback"
