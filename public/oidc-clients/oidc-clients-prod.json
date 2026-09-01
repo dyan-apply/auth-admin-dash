@@ -108,7 +108,9 @@
       "fantasy",
       "nfl_api",
       "nfl_complete",
-      "favorite_team"
+      "favorite_team",
+      "fr:idm:*",
+      "fr:am:*"
     ]
   },
   {
@@ -286,13 +288,9 @@
   },
   {
     "id": "5sodAyCn8L2tB9oFai59Osmd",
-    "redirectionUris": [
-      "https://care.dm.nfl.com/api/auth/callback"
-    ],
+    "redirectionUris": [],
     "scopes": [
-      "openid",
-      "profile",
-      "email"
+      "fr:idm:*"
     ]
   },
   {
@@ -567,14 +565,16 @@
   {
     "id": "ES-Pickem",
     "redirectionUris": [
-      "http://mispicks.nfl.com"
+      "https://mispicks.nfl.com"
     ],
     "scopes": [
       "openid",
       "profile",
       "email",
       "fr:am:*",
-      "fr:idm:*"
+      "fr:idm:*",
+      "nfl_complete",
+      "api"
     ]
   },
   {
@@ -1121,7 +1121,8 @@
     "redirectionUris": [
       "alliance-new-sandbox-auth://auth_redirect",
       "https://ne-patriots-fr-auth://auth_redirect",
-      "https://id.nfl.com/account"
+      "https://id.nfl.com/account",
+      "ne-patriots-fr-auth://auth_redirect"
     ],
     "scopes": [
       "openid",
@@ -1334,7 +1335,8 @@
   {
     "id": "cJeQeAjvXVarm7hNG2Kw6J3i",
     "redirectionUris": [
-      "https://nfltippspiel.sport.de"
+      "https://nfltippspiel.sport.de",
+      "https://nfltippspiel.ntv-sport.de"
     ],
     "scopes": [
       "openid",
@@ -1465,7 +1467,8 @@
       "https://stage-www.nfl.com/",
       "https://www.nfl.com/",
       "https://id.nfl.com/account/",
-      "https://pro.nfl.com/"
+      "https://pro.nfl.com/",
+      "https://mini-games.nfl.com"
     ],
     "scopes": [
       "openid",
@@ -1593,7 +1596,13 @@
       "https://event.nfl.com/draft/2026/registration/user-details",
       "https://event.nfl.com/flag-football/2026/registration/user-details",
       "https://event.nfl.com/rg_nflid_waiver_multi/2026/registration/user-details",
-      "https://event.nfl.com/rg_nflid_waiver_multi_2/2026/registration/user-details"
+      "https://event.nfl.com/rg_nflid_waiver_multi_2/2026/registration/user-details",
+      "https://event.nfl.com/australia-gameday-experience/2026/registration/user-details",
+      "https://event.nfl.com/australia-kickoff-festival/2026/registration/user-details",
+      "https://event.nfl.com/au/kickoff-festival/2026/registration/user-details",
+      "https://event.nfl.com/au/gameday-experience/2026/registration/user-details",
+      "https://event.nfl.com/de/city-tour/2026/registration/user-details",
+      "https://event.nfl.com/de/city-tour/2026/de/registration/user-details"
     ],
     "scopes": [
       "openid",
