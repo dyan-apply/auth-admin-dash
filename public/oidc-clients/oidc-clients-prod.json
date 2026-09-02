@@ -613,7 +613,8 @@
     "redirectionUris": [
       "https://id.nfl.com/account",
       "redirect-nfl-gb://NFLIDRedirect",
-      "https://google.com"
+      "https://google.com",
+      "https://yc-static.s3.amazonaws.com/custom_page/nflid_logout_bridge?application=NFL_GB"
     ],
     "scopes": [
       "openid",
