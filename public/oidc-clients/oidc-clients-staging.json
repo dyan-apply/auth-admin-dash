@@ -174,7 +174,9 @@
       "https://stg.pro.nfl.com/",
       "https://stage-www.nfl.com/?enable_oidc",
       "http://localhost:3000",
-      "http://localhost:8080"
+      "http://localhost:8080",
+      "https://stg-mini-games.nfl.com/auth/callback",
+      "https://local-mini-games.nfl.com:3000/auth/callback"
     ],
     "scopes": [
       "openid",
@@ -187,7 +189,9 @@
       "nfl_api",
       "favorite_team",
       "plans",
-      "api"
+      "api",
+      "fr:idm:*",
+      "fr:am:*"
     ]
   },
   {
@@ -330,11 +334,16 @@
   },
   {
     "id": "BE-Crawler-Application",
-    "redirectionUris": [],
+    "redirectionUris": [
+      "https://staging-id.nfl.com/account",
+      "https://staging-id.nfl.com/oidc/proxy"
+    ],
     "scopes": [
       "fr:am:*",
       "nfl_complete",
-      "fr:idm:*"
+      "fr:idm:*",
+      "profile",
+      "openid"
     ]
   },
   {
@@ -446,14 +455,9 @@
   },
   {
     "id": "DCoP-9iNHSxPwVnUImw9txnV",
-    "redirectionUris": [
-      "http://localhost:3001/api/auth/callback",
-      "https://stage-care.dm.nfl.com/api/auth/callback"
-    ],
+    "redirectionUris": [],
     "scopes": [
-      "openid",
-      "profile",
-      "email"
+      "fr:idm:*"
     ]
   },
   {
@@ -697,9 +701,9 @@
   {
     "id": "TIXR",
     "redirectionUris": [
-      "https://staging.tixr.com/sso/nfl/jwt",
-      "https://test.tixr.com/sso/nfl/jwt",
-      "https://develop.tixr.com/sso/nfl/jwt"
+      "https://staging.tixr.com/sso/ping/jwt",
+      "https://test.tixr.com/sso/ping/jwt",
+      "https://develop.tixr.com/sso/ping/jwt"
     ],
     "scopes": [
       "openid",
@@ -877,7 +881,11 @@
       "fr:am:*",
       "fr:idm:*",
       "nfl_complete",
-      "NFLLegacyTokenExchange"
+      "NFLLegacyTokenExchange",
+      "NFLProxyLogin",
+      "address",
+      "profile",
+      "email"
     ]
   },
   {
