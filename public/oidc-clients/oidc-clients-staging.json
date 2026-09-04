@@ -885,7 +885,8 @@
       "NFLProxyLogin",
       "address",
       "profile",
-      "email"
+      "email",
+      "fantasy"
     ]
   },
   {
