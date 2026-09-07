@@ -1603,7 +1603,8 @@
       "https://event.nfl.com/au/kickoff-festival/2026/registration/user-details",
       "https://event.nfl.com/au/gameday-experience/2026/registration/user-details",
       "https://event.nfl.com/de/city-tour/2026/registration/user-details",
-      "https://event.nfl.com/de/city-tour/2026/de/registration/user-details"
+      "https://event.nfl.com/de/city-tour/2026/de/registration/user-details",
+      "https://event.nfl.com/uk/gb-packers-london-huddle/2026/registration/user-details"
     ],
     "scopes": [
       "openid",
