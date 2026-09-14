@@ -848,7 +848,9 @@
       "https://stage-fanexperience.nfl.com/super-bowl/2025/registration/user-details",
       "https://stage-fanexperience.nfl.com/pro-bowl/2025/registration/user-details",
       "https://stage-media.nfl.com/content/events/us/draft/2025/en/registration.html",
-      "https://stage-fanexperience.nfl.com/draft/2026/registration/user-details"
+      "https://stage-fanexperience.nfl.com/draft/2026/registration/user-details",
+      "https://stage-fanexperience.nfl.com/au/australia-kickoff-festival/2026/registration/user-details",
+      "https://dev-media.nfl.com/draft/2026/registration/user-details"
     ],
     "scopes": [
       "openid",
