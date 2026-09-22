@@ -882,9 +882,9 @@
     "scopes": [
       "fr:am:*",
       "fr:idm:*",
-      "nfl_complete",
       "NFLLegacyTokenExchange",
       "NFLProxyLogin",
+      "nfl_complete",
       "address",
       "profile",
       "email",
