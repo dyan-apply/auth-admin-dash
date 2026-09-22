@@ -1380,6 +1380,18 @@
     "scopes": []
   },
   {
+    "id": "token-exchange-actor",
+    "redirectionUris": [],
+    "scopes": [
+      "nfl_complete",
+      "openid",
+      "address",
+      "email",
+      "profile",
+      "phone"
+    ]
+  },
+  {
     "id": "uoCRDtLbgtXc_aMMY6Du0TtL",
     "redirectionUris": [
       "https://staging-id.nfl.com/account",
