@@ -2196,6 +2196,18 @@
     ]
   },
   {
+    "id": "token-exchange-actor",
+    "redirectionUris": [],
+    "scopes": [
+      "nfl_complete",
+      "openid",
+      "address",
+      "email",
+      "profile",
+      "phone"
+    ]
+  },
+  {
     "id": "tteGO2dqo3KQjT8oB0a4vVUo",
     "redirectionUris": [
       "https://id.nfl.com/oidc/proxy"
