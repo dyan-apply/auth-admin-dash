@@ -2205,7 +2205,8 @@
       "address",
       "email",
       "profile",
-      "phone"
+      "phone",
+      "fantasy"
     ]
   },
   {
