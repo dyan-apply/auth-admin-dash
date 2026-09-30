@@ -1469,7 +1469,8 @@
       "https://www.nfl.com/",
       "https://id.nfl.com/account/",
       "https://pro.nfl.com/",
-      "https://mini-games.nfl.com"
+      "https://mini-games.nfl.com",
+      "https://mini-games.nfl.com/login"
     ],
     "scopes": [
       "openid",
