@@ -2110,7 +2110,8 @@
   {
     "id": "secutix",
     "redirectionUris": [
-      "https://nfl.secutix-sso.quantum.secutix.com/login/oauth2/code/nfl_idp"
+      "https://nfl.secutix-sso.quantum.secutix.com/login/oauth2/code/nfl_idp",
+      "https://nfl-tickets.shop.secutix.com/account"
     ],
     "scopes": [
       "openid",
