@@ -527,6 +527,13 @@
     ]
   },
   {
+    "id": "Gridiron-batching",
+    "redirectionUris": [],
+    "scopes": [
+      "fr:idm:*"
+    ]
+  },
+  {
     "id": "Gridiron",
     "redirectionUris": [
       "https://staging-id.nfl.com/account"
