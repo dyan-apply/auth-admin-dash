@@ -2232,7 +2232,9 @@
   {
     "id": "tteGO2dqo3KQjT8oB0a4vVUo",
     "redirectionUris": [
-      "https://id.nfl.com/oidc/proxy"
+      "https://id.nfl.com/oidc/proxy",
+      "https://www.raiders.com/callback",
+      "https://www.raiders.com/signout-callback-oidc"
     ],
     "scopes": [
       "openid",
