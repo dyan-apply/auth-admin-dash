@@ -473,7 +473,9 @@
       "email",
       "address",
       "phone",
-      "profile"
+      "profile",
+      "fr:am:*",
+      "fr:idm:*"
     ]
   },
   {
