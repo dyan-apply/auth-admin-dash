@@ -1135,7 +1135,8 @@
       "https://stage-www.nfl.com/plus",
       "https://staging-id.nfl.com/oidc/proxy",
       "https://https://origin-stg-id.nfl.com/oidc/proxy",
-      "https://origin-stg-id.nfl.com/account"
+      "https://origin-stg-id.nfl.com/account",
+      "https://pr-34024.nfl-id.preview.nfl.com/account"
     ],
     "scopes": [
       "openid",
