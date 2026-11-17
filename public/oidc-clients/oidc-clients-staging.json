@@ -710,7 +710,8 @@
     "redirectionUris": [
       "https://staging.tixr.com/sso/ping/jwt",
       "https://test.tixr.com/sso/ping/jwt",
-      "https://develop.tixr.com/sso/ping/jwt"
+      "https://develop.tixr.com/sso/ping/jwt",
+      "https://staging-id.nfl.com/account"
     ],
     "scopes": [
       "openid",
