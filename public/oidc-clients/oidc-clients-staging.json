@@ -638,6 +638,25 @@
     ]
   },
   {
+    "id": "NFL-Bracket-Challenge",
+    "redirectionUris": [
+      "https://nfl-brackets-nflde.uat.f2p.media.geniussports.com",
+      "https://nfl-brackets-nflus.uat.f2p.media.geniussports.com",
+      "https://nfl-brackets-nflca.uat.f2p.media.geniussports.com",
+      "https://nfl-brackets-nflbr.uat.f2p.media.geniussports.com",
+      "https://nfl-brackets-nflau.uat.f2p.media.geniussports.com",
+      "https://nfl-brackets-nfluk.uat.f2p.media.geniussports.com",
+      "https://nfl-brackets-nflfr.uat.f2p.media.geniussports.com"
+    ],
+    "scopes": [
+      "openid",
+      "profile",
+      "email",
+      "favorite_team",
+      "nfl_complete"
+    ]
+  },
+  {
     "id": "NFLLDAPNFIT",
     "redirectionUris": [],
     "scopes": [
