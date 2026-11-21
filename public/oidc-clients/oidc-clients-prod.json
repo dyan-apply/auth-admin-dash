@@ -1618,7 +1618,9 @@
       "https://event.nfl.com/de/fan-zone/2026/registration/user-details",
       "https://event.nfl.com/de/fan-zone/2026/de/registration/user-details",
       "https://event.nfl.com/de/gameday/2026/de/registration/user-details",
-      "https://event.nfl.com/de/gameday/2026/registration/user-details"
+      "https://event.nfl.com/de/gameday/2026/registration/user-details",
+      "https://event.nfl.com/super-bowl/2027/registration/user-details",
+      "https://event.nfl.com/super-bowl/2027/es/registration/user-details"
     ],
     "scopes": [
       "openid",
