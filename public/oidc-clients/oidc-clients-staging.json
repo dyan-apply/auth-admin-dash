@@ -1141,6 +1141,26 @@
     ]
   },
   {
+    "id": "nfl-mobile-pkce",
+    "redirectionUris": [
+      "https://staging-id.nfl.com/oidc/proxy",
+      "nflmobile://settings",
+      "https://staging-id.nfl.com/account",
+      "nflmobile://staging-id.nfl.com/account"
+    ],
+    "scopes": [
+      "openid",
+      "profile",
+      "email",
+      "address",
+      "phone",
+      "nfl_complete",
+      "uid",
+      "nfl_api",
+      "fantasy"
+    ]
+  },
+  {
     "id": "nfl_test",
     "redirectionUris": [
       "https://staging-id.nfl.com/account",
